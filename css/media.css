@@ -1,78 +1,57 @@
 @media screen and (max-width: 1200px) {
   .start-page {
-    width: 98%;
-  }
-}
+    width: 98%; } }
 @media screen and (max-width: 1000px) {
   .content-claims-list .claim-category {
-    display: none;
-  }
+    display: none; }
 
   .column-block {
-    flex-direction: column;
-  }
-  .column-block .column {
-    width: 100%;
-    margin-bottom: 30px;
-  }
-}
+    flex-direction: column; }
+    .column-block .column {
+      width: 100%;
+      margin-bottom: 30px; } }
 @media screen and (max-width: 900px) {
   .start-page {
-    width: 90%;
-  }
+    width: 90%; }
 
   .login-form, .start-main {
     width: 100%;
-    float: none;
-  }
+    float: none; }
 
   .start-logo {
-    text-align: center;
-  }
-  .start-logo img {
-    max-width: 90%;
-  }
+    text-align: center; }
+    .start-logo img {
+      max-width: 90%; }
 
   .login-pop-up {
-    margin: 20px auto;
-  }
+    margin: 20px auto; }
 
   .start-advantages-list {
     width: 90%;
-    margin: auto;
-  }
-  .start-advantages-list ul li span {
-    font-size: 20px;
-  }
-}
+    margin: auto; }
+    .start-advantages-list ul li span {
+      font-size: 20px; } }
 @media screen and (max-width: 750px) {
   .mobile-content {
-    display: block;
-  }
+    display: block; }
 
   .main-nav {
-    left: -320px;
-  }
+    left: -320px; }
 
   .main {
-    width: 100%;
-  }
-}
+    width: 100%; } }
 @media screen and (max-width: 670px) {
   .start-main {
-    display: none;
-  }
+    display: none; }
 
   .no-mobile {
-    display: none;
-  }
-}
+    display: none; }
+
+  .sa-block-full .sa-block-full-right, .sa-block-full .sa-block-full-left {
+    width: 100% !important; } }
 @media screen and (max-width: 425px) {
   .content {
-    padding: 30px 10px;
-  }
+    padding: 30px 10px; }
 
   .sa-block {
-    padding: 30px 15px;
-  }
-}
+    padding: 30px 15px; } }
