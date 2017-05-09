@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/media.css">
+	<script src="js/jquery-3.1.0.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/zepto.min.js"></script>
+</head>
+
+<body>
+	<div class="wrapp">
+		<aside class="main-nav">
+			<div class="nav-content">
+				<div class="start-logo">
+					<img src="images/big-logo.png" alt="">
+				</div>
+				<nav>
+					<ul>
+						<li><a href=""><i class="fa fa-address-card-o" aria-hidden="true"></i>Редагувати профіль</a></li>
+						<li><a href=""><i class="fa fa-pencil-square-o" aria-hidden="true"></i>Подати зявку</a></li>
+						<li><a href=""><i class="fa fa-list-ul" aria-hidden="true"></i>Мої заявки</a></li>
+					</ul>
+				</nav>
+			</div>
+		</aside>
+		<div class="main">
+			<header>
+				<div class="mobile-content">
+					<button class="btn--green mobile-nav-open"><i class="fa fa-bars" aria-hidden="true"></i></button>
+				</div>
+				<h1>Дошка завдань</h1>
+				<div class="header-profile">
+					<span class="normal-text no-mobile">Им'я Користувача</span>
+					<a href="#" class="exit-btn"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+				</div>
+			</header>
+			<main class="content content-dashboard">
+				<div id="dashboard" class="dashboard">
+					<div class="dashboard-block">
+						<h2 class="dashboard-status">
+							До Виконання
+						</h2>
+						<div class="issue-content droppable ui-droppable">
+
+							<div id="1"  class="dashboard-issue ui-draggable">
+								<span class="issue-theme">Theme</span>
+								<span class="issue-performer">Name Surname</span>
+								<span class="issue-performer">Name Surname</span>
+							</div>
+							<div id="6"  class="dashboard-issue ui-draggable">
+								<span class="issue-theme">Theme</span>
+								<span class="issue-performer">Name Surname</span>
+								<span class="issue-performer">Name Surname</span>
+							</div>
+						</div>
+					</div>
+					<div class="dashboard-block">
+						<h2 class="dashboard-status">
+							In Progress
+						</h2>
+						<div class="issue-content droppable ui-droppable ">
+
+							<div id="2"  class="dashboard-issue ui-draggable">
+								<span class="issue-theme">Theme</span>
+								<span class="issue-performer">Name Surname</span>
+								<span class="issue-performer">Name Surname</span>
+							</div>
+						</div>
+					</div>
+					<div class="dashboard-block">
+						<h2 class="dashboard-status">
+							Перевірити
+						</h2>
+						<div class="issue-content droppable ui-droppable ">
+
+							<div id="3"  class="dashboard-issue ui-draggable">
+								<span class="issue-theme">Theme</span>
+								<span class="issue-performer">Name Surname</span>
+								<span class="issue-performer">Name Surname</span>
+							</div>
+						</div>
+					</div>
+					<div class="dashboard-block">
+						<h2 class="dashboard-status">
+							Reopened
+						</h2>
+						<div class="issue-content droppable ui-droppable ">
+
+							<div id="4"  class="dashboard-issue ui-draggable">
+								<span class="issue-theme">Theme</span>
+								<span class="issue-performer">Name Surname</span>
+								<span class="issue-performer">Name Surname</span>
+							</div>
+						</div>
+					</div>
+					<div class="dashboard-block">
+						<h2 class="dashboard-status">
+							Виконано
+						</h2>
+						<div class="issue-content droppable ui-droppable ">
+
+							<div id="5"  class="dashboard-issue ui-draggable">
+								<span class="issue-theme">Theme</span>
+								<span class="issue-performer">Name Surname</span>
+								<span class="issue-performer">Name Surname</span>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</main>
+		</div>
+	</div>
+	<script src="js/dashboard.js"></script>
+</body>
+
+</html>

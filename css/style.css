@@ -789,3 +789,63 @@ h2 {
       padding: 10px; }
   .sa-block-full button {
     margin: 20px 10px; }
+
+.dashboard {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: horizontal;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  -webkit-align-items: stretch;
+  -moz-align-items: stretch;
+  align-items: stretch;
+  min-height: 300px;
+  height: auto; }
+  .dashboard h2 {
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+    font-size: 15px;
+    text-align: center; }
+
+.dashboard-block {
+  width: 20%;
+  padding: 4px 3px;
+  box-sizing: border-box; }
+
+.issue-content {
+  background-color: rgba(255, 255, 255, 0.4);
+  height: 100%; }
+
+.dashboard-issue {
+  width: calc(100% - 4px);
+  height: 70px;
+  margin: 0px auto 4px;
+  background-color: aliceblue; }
+  .dashboard-issue:hover {
+    cursor: move; }
+  .dashboard-issue span {
+    width: 100%;
+    display: inline-block;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    color: #000; }
+
+.ui-state-highlight {
+  opacity: 0.2;
+  cursor: move; }
