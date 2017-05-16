@@ -280,6 +280,12 @@ h2{
     display: inline-block;
     margin: 0 0 6px 0;
     font-size: 1.1em;
+	color: #fff;
+	font-family: $font;
+}
+.sa-lable{
+	color: #fff;
+	font-family: $font;
 }
 .sa-textarea{
 	textarea{
@@ -327,6 +333,7 @@ h2{
     border-radius: 3px;
     line-height: 18px;
     margin-right: 5px;
+	color: #fff;
 }
 .sa-label{
    position: relative;
@@ -652,6 +659,7 @@ h2{
 
 .sa-block-full{
 	padding: 10px;
+	margin-bottom: 10px;
 	form{
 		@include display-flex();
 		@include flex-direction(row);
@@ -669,7 +677,7 @@ h2{
 	}
 	max-width: 100%;
 }
-.dashboard{
+.dashboard,.main-dashboard{
 	width: 100%;
 	@include display-flex();
 	@include flex-direction(row);
@@ -685,35 +693,207 @@ h2{
     	text-align: center;
 	}
 }
-.dashboard-block{
-	width: 20%;
-	padding: 4px 3px;
-	box-sizing: border-box;
-	
+
+.dashboard{
+	width: 80%;
 }
-.issue-content{
+.dashboard-block{
+	width: 25%;
+	box-sizing: border-box;
+}
+.help-dropp{
+	padding-top: 2px;
+	border-radius: 3px;
 	background-color: rgba(255, 255, 255, 0.4);
 	height: 100%;
 }
+.no-dropp-row{
+	width: 20%;
+	.dashboard-block{
+		width: 20%;
+	}
+	.dashboard-issue{
+		cursor: pointer;
+	}
+}
+.issue-content{
+	height: 100%;
+	padding: 4px 3px;
+}
 .dashboard-issue{
 	width: calc(100% - 4px);
-	height: 70px;
+	box-sizing: border-box;
+    padding: 5px;
+	border-radius: 3px;
 	margin: 0px auto 4px;
-	background-color: aliceblue;
-	&:hover{
-		cursor: move;
-	}
+	background-color: #fff;
+	cursor: move;
+	 -webkit-box-shadow: 0px 3px 2px 0px rgba(0,0,0,0.39);
+    -moz-box-shadow: 0px 3px 2px 0px rgba(0,0,0,0.39);
+    box-shadow: 0px 3px 2px 0px rgba(0,0,0,0.39);
 	span{
 		width: 100%;
 		display: inline-block;
 		white-space: nowrap;
 		text-overflow: ellipsis;
 		overflow: hidden;
-		color:#000;
 		
 	}
 }
 .ui-state-highlight{
 	opacity: 0.2;
 	cursor: move;
+}
+.issue-theme {
+    color: $blue;
+    font-size: 16px;
+	white-space: normal;
+}
+.issue-performer{
+	text-align: right;
+	font-size: 14px;
+	color: #ccc;
+}
+.issue-date{
+	color: #fff;
+    font-size: 12px;
+	padding: 3px 4px;
+	border-radius: 3px;
+	background-color: $orange;
+	width: auto!important;
+}
+.modal{
+	position: fixed;
+    display: none;
+    top:0;
+    z-index: 99999;
+    left: 0;
+    overflow: auto;
+    width: 100%;
+    height: 100vh;
+    //background: rgba(0,0,0, 0.5);
+    button{
+        &:focus{
+            outline: none;
+        }
+    }
+}
+.pop-up{
+	width: 50%;
+    min-width: 300px;
+	max-width: 95%;
+    margin: 8% auto;
+	padding: 30px;
+	color: #fff;
+	font:16px/16px $font;
+    position: relative;
+    background-color: #1e171f; 
+	-webkit-box-shadow: 0px 6px 15px 0px rgba(0,0,0,0.39);
+    -moz-box-shadow: 0px 6px 15px 0px rgba(0,0,0,0.39);
+    box-shadow: 0px 6px 15px 0px rgba(0,0,0,0.39);
+	.sa-block{
+		background-color: #1e171f; 
+	}
+}
+.close-modal-btn{
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	border: none;
+	background-color: transparent;
+	color: #fff;
+}
+.content-create-task{
+	@include flex-direction(column);
+}
+.task-description-modal{
+	position: fixed;
+    min-height: 100vh;
+    width: 285px;
+    background-color: #1e171f;
+    z-index: 999;
+	box-sizing: border-box;
+	padding: 40px 15px 20px;
+	@extend .scroll-bar;
+	
+}
+.issue-desctiption-content{
+	margin-top: 20px;
+	padding-bottom: 10px;
+	border-bottom: 2px solid rgba(255, 255, 255, 0.4);
+	&:nth-last-child(1){
+		border-bottom: none;
+	}
+}
+.issue-desctiption-block{
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+	&:nth-last-child(1){
+		border-bottom: none;
+	}
+}
+.issue-desctiption-name{
+	display: inline-block;
+	padding: 5px 10px;
+	background-color: $blue;
+	border-radius: 3px;
+	margin-bottom: 5px;
+}
+.issue-desctiption-text{
+	display: inline-block;
+	width: 100%;
+
+}
+.sub-issue-desctiption-content{
+	border-left: 4px solid $orange;
+	padding-left: 15px;
+	.issue-desctiption-name{
+		background-color: #c5c5c5;
+		color: #333;
+	}
+}
+.content-dashboard{
+	@include flex-direction(column);
+}
+.main-dashboard{
+	margin-bottom: 50px;
+}
+.to-archive{
+	margin:10px auto;
+	font-size: 12px;
+	padding: 3px 5px;
+	
+}
+.archive-task, .equipment-list{
+	width: 100%;
+	.btn--orange, .btn--blue, .btn--red{
+		padding: 3px 5px;
+		font-size: 12px;
+	}
+}
+.content-equipment-list{
+	@include flex-direction(column); 
+}
+.eq-note{
+	min-width: 200px!important;
+}
+.btn-new-equipment{
+	width: 160px;
+	text-align: center;
+	position: fixed;
+	right: 30px;
+	
+	
+}
+.equipment-list{
+	.btn--orange, .btn--red{
+		margin: 0 3px;
+	}
+}
+.content-add-equipment{
+	display: block;
+	.sa-block-full{
+		margin-top: 0;
+	}
 }

@@ -1,7 +1,26 @@
 $(document).ready(function () {
+	$(document).delegate('.ar-task-desc','click', function (event) {
+        $('.arcive-description-tasks').show();
+    });
+	$(document).delegate('.close-modal-btn','click', function (event) {
+        $(this).closest('.modal').hide();
+    });
+	 $('.open-filters-btn').on('click', function () {
+        var filters = $(this).closest('.filters').find('.filter-section')
+        if ($(filters).hasClass('close')) {
+            $(filters).removeClass('close');
+            $(this).html('Сховати фільтри');
+        }
+        else {
+            $(filters).addClass('close');
+            $(this).html('Показати фільтри');
+        }
+
+    });
     $('.exit-btn').click(function () {
         window.location.href = logoffUrl;
     });
+	
     $("form").data("validator").settings.ignore = "";
     $('.sa-select').each(function () {
         var checkeditem = $(this).find('ul.sa-list li.checked');
@@ -25,7 +44,14 @@ $(document).ready(function () {
         }
 
     });
-
+	$(document).delegate('.new-subtask button','click', function (event) {
+        $(this).html('Успішно створено');
+		$(this).removeClass('btn--orange');
+		$(this).addClass('btn--green');
+    });
+	
+	
+	
     $(document).delegate(".sa-select", 'click', function (event) {
         $(this).find('.sa-list').slideToggle();
     });
@@ -49,18 +75,7 @@ $(document).ready(function () {
     $('.main').on('swipeLeft', function () {
         $('.main-nav').animate({ left: '-320px' }, 200);
     });
-    $('.open-filters-btn').on('click', function () {
-        var filters = $(this).closest('.filters').find('.filter-section')
-        if ($(filters).hasClass('close')) {
-            $(filters).removeClass('close');
-            $(this).html('Сховати фільтри');
-        }
-        else {
-            $(filters).addClass('close');
-            $(this).html('Показати фільтри');
-        }
-
-    });
+   
 });
 
 function openMenu() {

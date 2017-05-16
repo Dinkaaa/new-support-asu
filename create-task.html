@@ -21,9 +21,14 @@
 				</div>
 				<nav>
 					<ul>
-						<li><a href=""><i class="fa fa-address-card-o" aria-hidden="true"></i>Редагувати профіль</a></li>
-						<li><a href=""><i class="fa fa-pencil-square-o" aria-hidden="true"></i>Подати зявку</a></li>
-						<li><a href=""><i class="fa fa-list-ul" aria-hidden="true"></i>Мої заявки</a></li>
+						<!--						<li><a href=""><i class="fa fa-address-card-o" aria-hidden="true"></i>Редагувати профіль</a></li>-->
+						<li><a href=""><i class="fa fa-list-ul" aria-hidden="true"></i>Заявки</a></li>
+						<li><a href=""><i class="fa fa-tasks" aria-hidden="true"></i>Завдання</a></li>
+						<li><a href=""><i class="fa fa-magic" aria-hidden="true"></i>Створити завдання</a></li>
+						<li><a href=""><i class="fa fa-hdd-o" aria-hidden="true"></i>Обладнання</a></li>
+						<li><a href=""><i class="fa fa-desktop" aria-hidden="true"></i>Розклад проектора</a></li>
+						<li><a href=""><i class="fa fa-wrench" aria-hidden="true"></i>Розклад профілактик</a></li>
+						<li><a href=""><i class="fa fa-archive" aria-hidden="true"></i>Архів завдань</a></li>
 					</ul>
 				</nav>
 			</div>
@@ -123,42 +128,42 @@
 									<div class="ckeckbox-form">
 										<span class="sa-checkbox false" data-checked="false"><i class="fa fa-check" aria-hidden="true"></i></span>
 										<input type="checkbox">
-										<span class="sa-label">Lorem ipsum dolor</span>
+										<span class="sa-lable">Lorem ipsum dolor</span>
 									</div>
 								</li>
 								<li>
 									<div class="ckeckbox-form">
 										<span class="sa-checkbox false" data-checked="false"><i class="fa fa-check" aria-hidden="true"></i></span>
 										<input type="checkbox">
-										<span class="sa-label">Lorem ipsum dolor</span>
+										<span class="sa-lable">Lorem ipsum dolor</span>
 									</div>
 								</li>
 								<li>
 									<div class="ckeckbox-form">
 										<span class="sa-checkbox false" data-checked="false"><i class="fa fa-check" aria-hidden="true"></i></span>
 										<input type="checkbox">
-										<span class="sa-label">Lorem ipsum dolor</span>
+										<span class="sa-lable">Lorem ipsum dolor</span>
 									</div>
 								</li>
 								<li>
 									<div class="ckeckbox-form">
 										<span class="sa-checkbox false" data-checked="false"><i class="fa fa-check" aria-hidden="true"></i></span>
 										<input type="checkbox">
-										<span class="sa-label">Lorem ipsum dolor</span>
+										<span class="sa-lable">Lorem ipsum dolor</span>
 									</div>
 								</li>
 								<li>
 									<div class="ckeckbox-form">
 										<span class="sa-checkbox false" data-checked="false"><i class="fa fa-check" aria-hidden="true"></i></span>
 										<input type="checkbox">
-										<span class="sa-label">Lorem ipsum dolor</span>
+										<span class="sa-lable">Lorem ipsum dolor</span>
 									</div>
 								</li>
 								<li>
 									<div class="ckeckbox-form">
 										<span class="sa-checkbox false" data-checked="false"><i class="fa fa-check" aria-hidden="true"></i></span>
 										<input type="checkbox">
-										<span class="sa-label">Lorem ipsum dolor</span>
+										<span class="sa-lable">Lorem ipsum dolor</span>
 									</div>
 								</li>
 
@@ -166,32 +171,183 @@
 									<div class="ckeckbox-form">
 										<span class="sa-checkbox false" data-checked="false"><i class="fa fa-check" aria-hidden="true"></i></span>
 										<input type="checkbox">
-										<span class="sa-label">Lorem ipsum dolor</span>
+										<span class="sa-lable">Lorem ipsum dolor</span>
 									</div>
 								</li>
 								<li>
 									<div class="ckeckbox-form">
 										<span class="sa-checkbox false" data-checked="false"><i class="fa fa-check" aria-hidden="true"></i></span>
 										<input type="checkbox">
-										<span class="sa-label">Lorem ipsum dolor</span>
+										<span class="sa-lable">Lorem ipsum dolor</span>
 									</div>
 								</li>
 								<li>
 									<div class="ckeckbox-form">
 										<span class="sa-checkbox false" data-checked="false"><i class="fa fa-check" aria-hidden="true"></i></span>
 										<input type="checkbox">
-										<span class="sa-label">Lorem ipsum dolor</span>
+										<span class="sa-lable">Lorem ipsum dolor</span>
 									</div>
 								</li>
 							</ul>
 						</div>
 					</div>
-                        <button type="submit" class="btn--green">Створити</button>
-						<button type="submit" class="btn--orange">Додати завдання</button>
+                       <button  class="btn--orange">Додати заявку</button>
+					   <button  class="btn--blue new-subtask">Додати підзавдання</button>
+                       <button type="submit" class="btn--green">Створити</button>
 				</form>
+				
 			</div>
+				<div class="sa-block sa-block-full sa-block-subtask">
+					<form action="" class="new-subtask">
+					<div class="sa-block-full-left ">
+                      <div class="input-field">
+                           <span class="input-lable">Назва</span>
+                           <input type="text" class="sa-input" placeholder="Введіть назву" required>
+                           <span class="required-field">*</span>
+                           <span class="help-error">Не вірно</span>
+                       </div>
+                       <div class="input-field sa-select">
+                           <span class="input-lable">Категорія</span>
+                            <input type="text" class="sa-input" placeholder="Категорія"  readonly>
+                             <ul class="sa-list">
+                             	<li>1Lorem ipsum dolor.</li>
+                             	<li>2Lorem ipsum dolor.</li>
+                             	<li>3Lorem ipsum dolor.</li>
+                             	<li>4Lorem ipsum dolor.</li>
+                             	<li>5Lorem ipsum dolor.</li>
+                             	<li>6Lorem ipsum dolor.</li>
+                             	<li>7Lorem ipsum dolor.</li>
+                             	<li>8Lorem ipsum dolor.</li>
+                             	<li>9Lorem ipsum dolor.</li>
+                             	<li>10Lorem ipsum dolor.</li>
+                             </ul>
+                        </div>
+                        <div class="input-field sa-select">
+                           <span class="input-lable">Аудиторія</span>
+                            <input type="text" class="sa-input" placeholder="Аудиторія" readonly>
+                             <ul class="sa-list">
+                             	<li>1Lorem ipsum dolor.</li>
+                             	<li>2Lorem ipsum dolor.</li>
+                             	<li>3Lorem ipsum dolor.</li>
+                             	<li>4Lorem ipsum dolor.</li>
+                             	<li>5Lorem ipsum dolor.</li>
+                             	<li>6Lorem ipsum dolor.</li>
+                             	<li>7Lorem ipsum dolor.</li>
+                             	<li>8Lorem ipsum dolor.</li>
+                             	<li>9Lorem ipsum dolor.</li>
+                             	<li>10Lorem ipsum dolor.</li>
+                             </ul>
+                        </div>
+                        <div class="input-field sa-textarea">
+                        <span class="input-lable">Опис</span>
+							<textarea type="text" class="sa-input" placeholder="Введіть опис" required></textarea>
+                            <span class="required-field">*</span>
+                        </div>
+                        
+					</div>
+                     <div class="sa-block-full-right">
+                        <div class="input-field">
+							<span class="input-lable">Дата з</span>
+							<input type="date" class="sa-input">
+						</div>
+						<div class="input-field">
+							<span class="input-lable">до</span>
+							<input type="date" class="sa-input">
+						</div>
+                       <div class="input-field sa-select">
+                           <span class="input-lable">Відповідальний</span>
+                            <input type="text" class="sa-input" placeholder="Відповідальний" required readonly>
+                             <span class="required-field">*</span>
+                             <ul class="sa-list">
+                             	<li>1Lorem ipsum dolor.</li>
+                             	<li>2Lorem ipsum dolor.</li>
+                             	<li>3Lorem ipsum dolor.</li>
+                             	<li>4Lorem ipsum dolor.</li>
+                             	<li>5Lorem ipsum dolor.</li>
+                             	<li>6Lorem ipsum dolor.</li>
+                             	<li>7Lorem ipsum dolor.</li>
+                             	<li>8Lorem ipsum dolor.</li>
+                             	<li>9Lorem ipsum dolor.</li>
+                             	<li>10Lorem ipsum dolor.</li>
+                             </ul>
+                        </div>
+                        <div class="input-field sa-select-chekbox">
+							<span class="input-lable">Виконавці</span>
+							<ul class="checkbox-list">
+								<li>
+									<div class="ckeckbox-form">
+										<span class="sa-checkbox false" data-checked="false"><i class="fa fa-check" aria-hidden="true"></i></span>
+										<input type="checkbox">
+										<span class="sa-lable">Lorem ipsum dolor</span>
+									</div>
+								</li>
+								<li>
+									<div class="ckeckbox-form">
+										<span class="sa-checkbox false" data-checked="false"><i class="fa fa-check" aria-hidden="true"></i></span>
+										<input type="checkbox">
+										<span class="sa-lable">Lorem ipsum dolor</span>
+									</div>
+								</li>
+								<li>
+									<div class="ckeckbox-form">
+										<span class="sa-checkbox false" data-checked="false"><i class="fa fa-check" aria-hidden="true"></i></span>
+										<input type="checkbox">
+										<span class="sa-lable">Lorem ipsum dolor</span>
+									</div>
+								</li>
+								<li>
+									<div class="ckeckbox-form">
+										<span class="sa-checkbox false" data-checked="false"><i class="fa fa-check" aria-hidden="true"></i></span>
+										<input type="checkbox">
+										<span class="sa-lable">Lorem ipsum dolor</span>
+									</div>
+								</li>
+								<li>
+									<div class="ckeckbox-form">
+										<span class="sa-checkbox false" data-checked="false"><i class="fa fa-check" aria-hidden="true"></i></span>
+										<input type="checkbox">
+										<span class="sa-lable">Lorem ipsum dolor</span>
+									</div>
+								</li>
+								<li>
+									<div class="ckeckbox-form">
+										<span class="sa-checkbox false" data-checked="false"><i class="fa fa-check" aria-hidden="true"></i></span>
+										<input type="checkbox">
+										<span class="sa-lable">Lorem ipsum dolor</span>
+									</div>
+								</li>
+
+								<li>
+									<div class="ckeckbox-form">
+										<span class="sa-checkbox false" data-checked="false"><i class="fa fa-check" aria-hidden="true"></i></span>
+										<input type="checkbox">
+										<span class="sa-lable">Lorem ipsum dolor</span>
+									</div>
+								</li>
+								<li>
+									<div class="ckeckbox-form">
+										<span class="sa-checkbox false" data-checked="false"><i class="fa fa-check" aria-hidden="true"></i></span>
+										<input type="checkbox">
+										<span class="sa-lable">Lorem ipsum dolor</span>
+									</div>
+								</li>
+								<li>
+									<div class="ckeckbox-form">
+										<span class="sa-checkbox false" data-checked="false"><i class="fa fa-check" aria-hidden="true"></i></span>
+										<input type="checkbox">
+										<span class="sa-lable">Lorem ipsum dolor</span>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+                       <button type="submit" class="btn--orange">Створити</button>
+				</form>
+				</div>
 			</main>
 		</div>
 	</div>
+	<script src="js/jquery-3.1.0.min.js"></script>
+	<script src="js/script.js"></script>
 	</body>
 </html>
