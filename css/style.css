@@ -902,7 +902,8 @@ h2 {
   left: 0;
   overflow: auto;
   width: 100%;
-  height: 100vh; }
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5); }
   .modal button:focus {
     outline: none; }
 
@@ -915,7 +916,7 @@ h2 {
   color: #fff;
   font: 16px/16px "Myriad-Pro Regular", "Arial", sans-serif;
   position: relative;
-  background-color: #1e171f;
+  background-color: #382d42;
   -webkit-box-shadow: 0px 6px 15px 0px rgba(0, 0, 0, 0.39);
   -moz-box-shadow: 0px 6px 15px 0px rgba(0, 0, 0, 0.39);
   box-shadow: 0px 6px 15px 0px rgba(0, 0, 0, 0.39); }
@@ -945,7 +946,10 @@ h2 {
   background-color: #1e171f;
   z-index: 999;
   box-sizing: border-box;
-  padding: 40px 15px 20px; }
+  padding: 40px 15px 20px;
+  background-color: none; }
+  .task-description-modal .pop-up {
+    background-color: #1e171f; }
 
 .issue-desctiption-content {
   margin-top: 20px;
@@ -995,11 +999,13 @@ h2 {
   font-size: 12px;
   padding: 3px 5px; }
 
-.archive-task, .equipment-list {
+.archive-task, .equipment-list, .putchases, .single-putchas-list {
   width: 100%; }
-  .archive-task .btn--orange, .archive-task .btn--blue, .archive-task .btn--red, .equipment-list .btn--orange, .equipment-list .btn--blue, .equipment-list .btn--red {
+  .archive-task .btn--orange, .archive-task .btn--blue, .archive-task .btn--red, .equipment-list .btn--orange, .equipment-list .btn--blue, .equipment-list .btn--red, .putchases .btn--orange, .putchases .btn--blue, .putchases .btn--red, .single-putchas-list .btn--orange, .single-putchas-list .btn--blue, .single-putchas-list .btn--red {
     padding: 3px 5px;
-    font-size: 12px; }
+    font-size: 14px; }
+  .archive-task .claim-item > div, .equipment-list .claim-item > div, .putchases .claim-item > div, .single-putchas-list .claim-item > div {
+    margin-bottom: 0; }
 
 .content-equipment-list {
   -webkit-box-direction: normal;
@@ -1018,10 +1024,53 @@ h2 {
   position: fixed;
   right: 30px; }
 
-.equipment-list .btn--orange, .equipment-list .btn--red {
+.equipment-list .btn--orange, .equipment-list .btn--red, .equipment-list .btn--blue, .putchases .btn--orange, .putchases .btn--red, .putchases .btn--blue, .single-putchas-list .btn--orange, .single-putchas-list .btn--red, .single-putchas-list .btn--blue {
   margin: 0 3px; }
 
 .content-add-equipment {
   display: block; }
   .content-add-equipment .sa-block-full {
     margin-top: 0; }
+
+.content-putchases {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  justify-content: space-between; }
+  .content-putchases .filters {
+    margin-right: 20px;
+    width: 30%;
+    min-width: 200px; }
+  .content-putchases .putchases {
+    width: 65%;
+    min-width: 300px; }
+
+.btn-new-putchases {
+  margin-bottom: 20px; }
+
+.fix-content-putchases {
+  position: fixed; }
+
+.single-putchas-list {
+  width: 100%;
+  margin-top: 20px; }
+
+.single-putchases-edit {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.content-single-putchases {
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+
+.modal-edit-putchas .sa-block {
+  background-color: rgba(255, 255, 255, 0.3); }
