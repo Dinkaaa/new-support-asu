@@ -643,7 +643,8 @@ h2{
 	li{
 		margin: 4px 0;
 		width: 50%;
-		min-width: 100px;
+		min-width: 146px;
+		//min-width: 100px;
 	}
 }
 .filters{
@@ -932,7 +933,7 @@ h2{
 .single-putchases-edit{
 	@include display-flex();
 }
-.content-single-putchases{
+.content-single-putchases, .content-claims-list, .content-single-claim{
 	@include flex-direction(column);
 }
 .modal-edit-putchas{
@@ -940,3 +941,10 @@ h2{
 		background-color: rgba(255, 255, 255, 0.3);
 	}
 }
+.new-user-add{
+	margin-right:20px;
+	width: 300px;
+}
+
+
+

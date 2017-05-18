@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/media.css">
+	<script src="js/jquery-3.1.0.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+</head>
+
+<body>
+	<div class="wrapp">
+		<aside class="main-nav">
+			<div class="nav-content">
+				<div class="start-logo">
+					<img src="images/big-logo.png" alt="">
+				</div>
+				<nav>
+					<ul>
+						<!--						<li><a href=""><i class="fa fa-address-card-o" aria-hidden="true"></i>Редагувати профіль</a></li>-->
+						<li><a href=""><i class="fa fa-list-ul" aria-hidden="true"></i>Заявки</a></li>
+						<li><a href=""><i class="fa fa-tasks" aria-hidden="true"></i>Завдання</a></li>
+						<li><a href=""><i class="fa fa-magic" aria-hidden="true"></i>Створити завдання</a></li>
+						<li><a href=""><i class="fa fa-hdd-o" aria-hidden="true"></i>Обладнання</a></li>
+						<li><a href=""><i class="fa fa-desktop" aria-hidden="true"></i>Розклад проектора</a></li>
+						<li><a href=""><i class="fa fa-wrench" aria-hidden="true"></i>Розклад профілактик</a></li>
+						<li><a href=""><i class="fa fa-archive" aria-hidden="true"></i>Архів завдань</a></li>
+						<li><a href=""><i class="fa fa-pencil-square-o" aria-hidden="true"></i>План закупівлі</a></li>
+					</ul>
+				</nav>
+			</div>
+		</aside>
+		<div class="main">
+			<header>
+				<div class="mobile-content">
+					<button class="btn--green mobile-nav-open"><i class="fa fa-bars" aria-hidden="true"></i></button>
+				</div>
+				<h1>Розклад профілактик</h1>
+				<div class="header-profile">
+					<span class="normal-text no-mobile">Довгаль Дмитро</span>
+					<a href="#" class="exit-btn"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+				</div>
+			</header>
+			<main class="content content-putchases content-prophylaxis">
+
+				<div class="filters">
+					<div class="fix-content-putchases">
+						<h2>Додати</h2>
+						<form action="" class="add-form">
+							<div class="input-field sa-select-chekbox">
+								<span class="input-lable">Аудиторія</span>
+								<ul class="checkbox-list">
+									<li>
+										<div class="ckeckbox-form">
+											<span class="sa-checkbox false" data-checked="false"><i class="fa fa-check" aria-hidden="true"></i></span>
+											<input type="checkbox">
+											<span class="sa-label">325</span>
+										</div>
+									</li>
+									<li>
+										<div class="ckeckbox-form">
+											<span class="sa-checkbox false" data-checked="false"><i class="fa fa-check" aria-hidden="true"></i></span>
+											<input type="checkbox">
+											<span class="sa-label">416</span>
+										</div>
+									</li>
+									<li>
+										<div class="ckeckbox-form">
+											<span class="sa-checkbox false" data-checked="false"><i class="fa fa-check" aria-hidden="true"></i></span>
+											<input type="checkbox">
+											<span class="sa-label">417</span>
+										</div>
+									</li>
+									<li>
+										<div class="ckeckbox-form">
+											<span class="sa-checkbox false" data-checked="false"><i class="fa fa-check" aria-hidden="true"></i></span>
+											<input type="checkbox">
+											<span class="sa-label">430</span>
+										</div>
+									</li>
+									<li>
+										<div class="ckeckbox-form">
+											<span class="sa-checkbox false" data-checked="false"><i class="fa fa-check" aria-hidden="true"></i></span>
+											<input type="checkbox">
+											<span class="sa-label">26</span>
+										</div>
+									</li>
+									<li>
+										<div class="ckeckbox-form">
+											<span class="sa-checkbox false" data-checked="false"><i class="fa fa-check" aria-hidden="true"></i></span>
+											<input type="checkbox">
+											<span class="sa-label">426</span>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="input-field">
+								<span class="input-lable">Дата</span>
+								<input type="date" class="sa-input">
+							</div>
+							<div class="input-field sa-textarea">
+								<span class="input-lable">Примітка</span>
+								<textarea type="text" class="sa-input" placeholder="" required></textarea>
+							</div>
+							<button class='btn--green'>Додати</button>
+						</form>
+					</div>
+				</div>
+				<div class="putchases">
+					<div class="claim-item claim-list-header">
+						<div class="claim-theme"><span>Аудиторія</span></div>
+						<div class="claim-date"><span>Дата</span></div>
+						<div class="eq-note"><span>Примітка</span></div>
+						<div class="claim-theme"></div>
+					</div>
+					<ul class="claims-list">
+						<li class="claim-item">
+							<div class="claim-theme"><span>416</span></div>
+							<div class="claim-date"><span>4.09</span></div>
+							<div class="eq-note"><span></span></div>
+							<div class="claim-theme"><a href="" class="btn--orange putchases-edit-btn"><i class="fa fa-pencil" aria-hidden="true"></i></a><a href="" class="btn--red btn-remove-equipment"><i class="fa fa-trash-o" aria-hidden="true"></i></a></div>
+
+						</li>
+						<li class="claim-item">
+							<div class="claim-theme"><span>323</span></div>
+							<div class="claim-date"><span>1.07</span></div>
+							<div class="eq-note"><span>Початок в 10:00. Ключі на вахті.</span></div>
+							<div class="claim-theme"><a href="" class="btn--orange putchases-edit-btn"><i class="fa fa-pencil" aria-hidden="true"></i></a><a href="" class="btn--red btn-remove-equipment"><i class="fa fa-trash-o" aria-hidden="true"></i></a></div>
+
+						</li>
+					</ul>
+				</div>
+			</main>
+		</div>
+		<div class="modal modal-edit-putchas" style="display:block">
+
+		<div class="pop-up">
+			<button class="close-modal-btn"><i class="fa fa-times" aria-hidden="true"></i></button>
+
+			<form action="" class="">
+				<div class="input-field sa-select-chekbox">
+								<span class="input-lable">Аудиторія</span>
+								<ul class="checkbox-list">
+									<li>
+										<div class="ckeckbox-form">
+											<span class="sa-checkbox false" data-checked="false"><i class="fa fa-check" aria-hidden="true"></i></span>
+											<input type="checkbox">
+											<span class="sa-label">325</span>
+										</div>
+									</li>
+									<li>
+										<div class="ckeckbox-form">
+											<span class="sa-checkbox false" data-checked="false"><i class="fa fa-check" aria-hidden="true"></i></span>
+											<input type="checkbox">
+											<span class="sa-label">416</span>
+										</div>
+									</li>
+									<li>
+										<div class="ckeckbox-form">
+											<span class="sa-checkbox false" data-checked="false"><i class="fa fa-check" aria-hidden="true"></i></span>
+											<input type="checkbox">
+											<span class="sa-label">417</span>
+										</div>
+									</li>
+									<li>
+										<div class="ckeckbox-form">
+											<span class="sa-checkbox false" data-checked="false"><i class="fa fa-check" aria-hidden="true"></i></span>
+											<input type="checkbox">
+											<span class="sa-label">430</span>
+										</div>
+									</li>
+									<li>
+										<div class="ckeckbox-form">
+											<span class="sa-checkbox false" data-checked="false"><i class="fa fa-check" aria-hidden="true"></i></span>
+											<input type="checkbox">
+											<span class="sa-label">26</span>
+										</div>
+									</li>
+									<li>
+										<div class="ckeckbox-form">
+											<span class="sa-checkbox false" data-checked="false"><i class="fa fa-check" aria-hidden="true"></i></span>
+											<input type="checkbox">
+											<span class="sa-label">426</span>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="input-field">
+								<span class="input-lable">Дата</span>
+								<input type="date" class="sa-input">
+							</div>
+				<div class="input-field sa-textarea">
+					<span class="input-lable">Примітка</span>
+					<textarea type="text" class="sa-input" placeholder=""></textarea>
+				</div>
+				<button class='btn--orange'>Зберігти</button>
+			</form>
+		</div>
+	</div>
+	</div>
+	<script src="js/script.js"></script>
+</body>
+
+</html>

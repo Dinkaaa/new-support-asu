@@ -753,7 +753,7 @@ h2 {
   .checkbox-list li {
     margin: 4px 0;
     width: 50%;
-    min-width: 100px; }
+    min-width: 146px; }
 
 .filters {
   text-align: center; }
@@ -1064,7 +1064,7 @@ h2 {
   display: -ms-flexbox;
   display: flex; }
 
-.content-single-putchases {
+.content-single-putchases, .content-claims-list, .content-single-claim {
   -webkit-box-direction: normal;
   -webkit-box-orient: vertical;
   -webkit-flex-direction: column;
@@ -1074,3 +1074,7 @@ h2 {
 
 .modal-edit-putchas .sa-block {
   background-color: rgba(255, 255, 255, 0.3); }
+
+.new-user-add {
+  margin-right: 20px;
+  width: 300px; }

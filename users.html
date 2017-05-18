@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/media.css">
+	<script src="js/jquery-3.1.0.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+</head>
+
+<body>
+	<div class="wrapp">
+		<aside class="main-nav">
+			<div class="nav-content">
+				<div class="start-logo">
+					<img src="images/big-logo.png" alt="">
+				</div>
+				<nav>
+					<ul>
+						<!--						<li><a href=""><i class="fa fa-address-card-o" aria-hidden="true"></i>Редагувати профіль</a></li>-->
+						<li><a href=""><i class="fa fa-list-ul" aria-hidden="true"></i>Заявки</a></li>
+						<li><a href=""><i class="fa fa-tasks" aria-hidden="true"></i>Завдання</a></li>
+						<li><a href=""><i class="fa fa-magic" aria-hidden="true"></i>Створити завдання</a></li>
+						<li><a href=""><i class="fa fa-hdd-o" aria-hidden="true"></i>Обладнання</a></li>
+						<li><a href=""><i class="fa fa-desktop" aria-hidden="true"></i>Розклад проектора</a></li>
+						<li><a href=""><i class="fa fa-wrench" aria-hidden="true"></i>Розклад профілактик</a></li>
+						<li><a href=""><i class="fa fa-archive" aria-hidden="true"></i>Архів завдань</a></li>
+						<li><a href=""><i class="fa fa-pencil-square-o" aria-hidden="true"></i>План закупівлі</a></li>
+						<li><a href=""><i class="fa fa-user" aria-hidden="true"></i>Користувачі</a></li>
+					</ul>
+				</nav>
+			</div>
+		</aside>
+		<div class="main">
+			<header>
+				<div class="mobile-content">
+					<button class="btn--green mobile-nav-open"><i class="fa fa-bars" aria-hidden="true"></i></button>
+				</div>
+				<h1>План закупівлі</h1>
+				<div class="header-profile">
+					<span class="normal-text no-mobile">Довгаль Дмитро</span>
+					<a href="#" class="exit-btn"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+				</div>
+			</header>
+			<main class="content content-users">
+				<div class=" new-user-add">
+				<h2>Додати користувача</h2>
+					<form action="">
+						<div class="input-field">
+							<span class="input-lable">Логін</span>
+							<input type="text" class="sa-input">
+						</div>
+						<div class="input-field">
+							<span class="input-lable">И'мя</span>
+							<input type="text" class="sa-input">
+						</div>
+						<div class="input-field">
+							<span class="input-lable">Електронна пошта</span>
+							<input type="email" class="sa-input">
+						</div>
+						<div class="input-field">
+							<span class="input-lable">Телефон</span>
+							<input type="tel" class="sa-input">
+						</div>
+						<button class='btn--green'>Додати</button>
+					</form>
+				</div>
+				<div class="single-putchas-list">
+					<div class="claim-item claim-list-header">
+						<div class="claim-date"><span>Логін</span></div>
+						<div class="claim-theme"><span>И'мя</span></div>
+						<div class="claim-theme"><span>Електронна пошта</span></div>
+						<div class="claim-theme"><span>Телефон</span></div>
+						<div class="claim-date"></div>
+					</div>
+					<ul class="claims-list">
+						<li class="claim-item">
+							<div class="claim-date"><span>is3107</span></div>
+							<div class="claim-theme"><span>Довгаль Дмитро</span></div>
+							<div class="claim-theme"><span>dovgal@gmail.com</span></div>
+							<div class="claim-theme"><span>0506784231</span></div>
+							<div class="claim-date"><a href="" class="btn--orange single-putchases-edit-btn"><i class="fa fa-pencil" aria-hidden="true"></i></a><a href="" class="btn--red btn-remove-equipment"><i class="fa fa-trash-o" aria-hidden="true"></i></a></div>
+						</li>
+						<li class="claim-item">
+							<div class="claim-date"><span>is3105</span></div>
+							<div class="claim-theme"><span>Гхаліні Діна</span></div>
+							<div class="claim-theme"><span>dinka-kartinka@ukr.net</span></div>
+							<div class="claim-theme"><span>0930742803</span></div>
+							<div class="claim-date"><a href="" class="btn--orange single-putchases-edit-btn"><i class="fa fa-pencil" aria-hidden="true"></i></a><a href="" class="btn--red btn-remove-equipment"><i class="fa fa-trash-o" aria-hidden="true"></i></a></div>
+
+						</li>
+						<li class="claim-item">
+							<div class="claim-date"><span>is3127</span></div>
+							<div class="claim-theme"><span>Опришко Евгеній</span></div>
+							<div class="claim-theme"><span>dovgal@gmail.com</span></div>
+							<div class="claim-theme"><span>0734188515</span></div>
+							<div class="claim-date"><a href="" class="btn--orange single-putchases-edit-btnsingle-putchases-edit-btn"><i class="fa fa-pencil" aria-hidden="true"></i></a><a href="" class="btn--red btn-remove-equipment"><i class="fa fa-trash-o" aria-hidden="true"></i></a></div>
+						</li>
+					</ul>
+				</div>
+			</main>
+		</div>
+
+
+	</div>
+	<div class="modal modal-edit-putchas" style="display:block">
+
+		<div class="pop-up">
+			<button class="close-modal-btn"><i class="fa fa-times" aria-hidden="true"></i></button>
+
+			<form action="" class="">
+				<div class="input-field">
+							<span class="input-lable">Логін</span>
+							<input type="text" class="sa-input">
+						</div>
+						<div class="input-field">
+							<span class="input-lable">И'мя</span>
+							<input type="text" class="sa-input">
+						</div>
+						<div class="input-field">
+							<span class="input-lable">Електронна пошта</span>
+							<input type="email" class="sa-input">
+						</div>
+						<div class="input-field">
+							<span class="input-lable">Телефон</span>
+							<input type="tel" class="sa-input">
+						</div>
+						<button class='btn--orange'>Змінити</button>
+			</form>
+		</div>
+	</div>
+	<script src="js/script.js"></script>
+</body>
+
+</html>
