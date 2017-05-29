@@ -1078,3 +1078,73 @@ h2 {
 .new-user-add {
   margin-right: 20px;
   width: 300px; }
+
+.search-btn {
+  position: absolute;
+  top: 27px;
+  height: 41px;
+  padding: 11px;
+  right: 0; }
+
+.projector-week {
+  width: 100%;
+  margin-bottom: 10px; }
+
+.projector-week-content {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: horizontal;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row; }
+
+.projector-day {
+  padding: 0;
+  border-right: 2px solid rgba(0, 0, 0, 0.3);
+  box-shadow: none; }
+  .projector-day:nth-last-child(1) {
+    border-right: none; }
+
+.projector-block {
+  height: 80px;
+  border-top: 2px solid rgba(0, 0, 0, 0.3);
+  box-sizing: border-box;
+  padding: 5px;
+  position: relative; }
+  .projector-block button, .projector-block a {
+    border: none;
+    position: absolute;
+    bottom: 5px;
+    width: 20px;
+    height: 20px;
+    border-radius: 3px;
+    color: #fff;
+    text-decoration: none;
+    margin: 0;
+    padding: 0; }
+
+.content-projector .new-user-add {
+  width: 200px; }
+
+.p-teacher {
+  display: inline-block;
+  width: 100%; }
+
+.edit-projector-btn {
+  background-color: #ffa32d;
+  left: 5px; }
+
+.remove-projector-btn {
+  background-color: #ff5252;
+  right: 5px; }
+
+.p-auditory {
+  display: inline-block;
+  padding: 3px 5px;
+  border-radius: 3px;
+  border: 1px solid #fff; }

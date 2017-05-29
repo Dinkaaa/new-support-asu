@@ -40,95 +40,327 @@
 				<div class="mobile-content">
 					<button class="btn--green mobile-nav-open"><i class="fa fa-bars" aria-hidden="true"></i></button>
 				</div>
-				<h1>План закупівлі</h1>
+				<h1>Розклад Проектора</h1>
 				<div class="header-profile">
 					<span class="normal-text no-mobile">Довгаль Дмитро</span>
 					<a href="#" class="exit-btn"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
 				</div>
 			</header>
-			<main class="content content-users">
+			<main class="content content-projector">
 				<div class=" new-user-add ">
-					<h2>Додати користувача</h2>
+					<h2>Додати пару</h2>
 					<form action="">
+						<div class="input-field sa-select">
+                           <span class="input-lable">Аудиторія</span>
+                            <input type="text" class="sa-input"  readonly>
+                             <ul class="sa-list">
+                             	<li>1Lorem ipsum dolor.</li>
+                             	<li>2Lorem ipsum dolor.</li>
+                             	<li>3Lorem ipsum dolor.</li>
+                             	<li>4Lorem ipsum dolor.</li>
+                             	<li>5Lorem ipsum dolor.</li>
+                             	<li>6Lorem ipsum dolor.</li>
+                             	<li>7Lorem ipsum dolor.</li>
+                             	<li>8Lorem ipsum dolor.</li>
+                             	<li>9Lorem ipsum dolor.</li>
+                             	<li>10Lorem ipsum dolor.</li>
+                             </ul>
+                        </div>
 						<div class="input-field">
-							<span class="input-lable">Логін</span>
+							<span class="input-lable">Викладач</span>
 							<input type="text" class="sa-input">
 						</div>
 						<div class="input-field">
-							<span class="input-lable">И'мя</span>
+							<span class="input-lable">Пара</span>
 							<input type="text" class="sa-input">
 						</div>
 						<div class="input-field">
-							<span class="input-lable">Електронна пошта</span>
-							<input type="email" class="sa-input">
+							<span class="input-lable">День</span>
+							<input type="text" class="sa-input">
 						</div>
 						<div class="input-field">
-							<span class="input-lable">Телефон</span>
-							<input type="tel" class="sa-input">
+							<span class="input-lable">Тиждень</span>
+							<input type="text" class="sa-input">
 						</div>
 						<button class='btn--green'>Додати</button>
 					</form>
 				</div>
-				<div class="single-putchas-list">
-					<div class="claim-item claim-list-header">
-						<div class="claim-theme"><span>Логін</span></div>
-						<div class="claim-theme"><span>И'мя</span></div>
-						<div class="claim-theme"><span>Електронна пошта</span></div>
-						<div class="claim-theme"><span>Телефон</span></div>
-						<div class="claim-date"></div>
+				<div class="projector-list">
+				<div class="projector-week">
+				<h2>Перший теждень</h2>
+				<div class="projector-week-content">
+				
+				<div class="sa-block projector-day">
+				<h3>Пн</h3>
+					<div class="projector-block">
+						<span class="p-teacher">Ковалюк Т.В.</span>
+						<span class="p-auditory">323</span>
+						<button class="edit-projector-btn"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+						<button class="remove-projector-btn"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
 					</div>
-					<ul class="claims-list">
-						<li class="claim-item">
-							<div class="claim-theme"><span>is3107</span></div>
-							<div class="claim-theme"><span>Довгаль Дмитро</span></div>
-							<div class="claim-theme"><span>dovgal@gmail.com</span></div>
-							<div class="claim-theme"><span>0506784231</span></div>
-							<div class="claim-date"><a href="" class="btn--orange single-putchases-edit-btn"><i class="fa fa-pencil" aria-hidden="true"></i></a><a href="" class="btn--red btn-remove-equipment"><i class="fa fa-trash-o" aria-hidden="true"></i></a></div>
-						</li>
-						<li class="claim-item">
-							<div class="claim-theme"><span>is3105</span></div>
-							<div class="claim-theme"><span>Гхаліні Діна</span></div>
-							<div class="claim-theme"><span>dinka-kartinka@ukr.net</span></div>
-							<div class="claim-theme"><span>0930742803</span></div>
-							<div class="claim-date"><a href="" class="btn--orange single-putchases-edit-btn"><i class="fa fa-pencil" aria-hidden="true"></i></a><a href="" class="btn--red btn-remove-equipment"><i class="fa fa-trash-o" aria-hidden="true"></i></a></div>
-
-						</li>
-						<li class="claim-item">
-							<div class="claim-theme"><span>is3127</span></div>
-							<div class="claim-theme"><span>Опришко Евгеній</span></div>
-							<div class="claim-theme"><span>dovgal@gmail.com</span></div>
-							<div class="claim-theme"><span>0734188515</span></div>
-							<div class="claim-date"><a href="" class="btn--orange single-putchases-edit-btnsingle-putchases-edit-btn"><i class="fa fa-pencil" aria-hidden="true"></i></a><a href="" class="btn--red btn-remove-equipment"><i class="fa fa-trash-o" aria-hidden="true"></i></a></div>
-						</li>
-					</ul>
+					<div class="projector-block">
+						<span class="p-teacher">Ковалюк Т.В.</span>
+						<span class="p-auditory">323</span>
+						<button class="edit-projector-btn"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+						<button class="remove-projector-btn"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
+					</div>
+					<div class="projector-block">
+						<span class="p-teacher">Томашевський В.А</span>
+						<span class="p-auditory">323</span>
+						<button class="edit-projector-btn"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+						<button class="remove-projector-btn"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
+					</div>
+						<div class="projector-block">
+					</div>
+					<div class="projector-block">
+					</div>
+					</div>
+					<div class="sa-block projector-day">
+					<h3>Вт</h3>
+					<div class="projector-block">
+						<span class="p-teacher">Ковалюк Т.В.</span>
+						<span class="p-auditory">323</span>
+						<button class="edit-projector-btn"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+						<button class="remove-projector-btn"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
+					</div>
+					<div class="projector-block">
+					</div>
+					<div class="projector-block">
+					</div>
+					<div class="projector-block">
+					</div>
+					<div class="projector-block">
+					</div>
+					</div>
+					<div class="sa-block projector-day">
+					<h3>Ср</h3>
+					<div class="projector-block">
+						<span class="p-teacher">Ковалюк Т.В.</span>
+						<span class="p-auditory">323</span>
+						<button class="edit-projector-btn"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+						<button class="remove-projector-btn"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
+					</div>
+					<div class="projector-block">
+					</div>
+					<div class="projector-block">
+					</div>
+					<div class="projector-block">
+					</div>
+					<div class="projector-block">
+					</div>
+					</div>
+					<div class="sa-block projector-day">
+					<h3>Чт</h3>
+					<div class="projector-block">
+						<span class="p-teacher">Ковалюк Т.В.</span>
+						<span class="p-auditory">323</span>
+						<button class="edit-projector-btn"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+						<button class="remove-projector-btn"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
+					</div>
+					<div class="projector-block">
+					</div>
+					<div class="projector-block">
+					</div>
+					<div class="projector-block">
+					</div>
+					<div class="projector-block">
+					</div>
+					</div>
+					<div class="sa-block projector-day">
+					<h3>Пт</h3>
+					<div class="projector-block">
+						<span class="p-teacher">Ковалюк Т.В.</span>
+						<span class="p-auditory">323</span>
+						<button class="edit-projector-btn"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+						<button class="remove-projector-btn"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
+					</div>
+					<div class="projector-block">
+					</div>
+					<div class="projector-block">
+					</div>
+					<div class="projector-block">
+					</div>
+					<div class="projector-block">
+					</div>
+					</div>
+					<div class="sa-block projector-day">
+					<h3>Сб</h3>
+					<div class="projector-block">
+						<span class="p-teacher">Ковалюк Т.В.</span>
+						<span class="p-auditory">323</span>
+						<button class="edit-projector-btn"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+						<button class="remove-projector-btn"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
+					</div>
+					<div class="projector-block">
+					</div>
+					<div class="projector-block">
+					</div>
+					<div class="projector-block">
+					</div>
+					<div class="projector-block">
+					</div>
+					</div>
+					</div>
+				</div>
+				<div class="projector-week">
+				<h2>Другий теждень</h2>
+				<div class="projector-week-content">
+				<div class="sa-block projector-day">
+				<h3>Пн</h3>
+					<div class="projector-block">
+						<span class="p-teacher">Ковалюк Т.В.</span>
+						<span class="p-auditory">323</span>
+						<button class="edit-projector-btn"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+						<button class="remove-projector-btn"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
+					</div>
+					<div class="projector-block">
+						<span class="p-teacher">Ковалюк Т.В.</span>
+						<span class="p-auditory">323</span>
+						<button class="edit-projector-btn"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+						<button class="remove-projector-btn"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
+					</div>
+					<div class="projector-block">
+						<span class="p-teacher">Ковалюк Т.В.</span>
+						<span class="p-auditory">323</span>
+						<button class="edit-projector-btn"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+						<button class="remove-projector-btn"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
+					</div>
+					<div class="projector-block">
+					</div>
+					<div class="projector-block">
+					</div>
+					</div>
+					<div class="sa-block projector-day">
+					<h3>Вт</h3>
+					<div class="projector-block">
+						<span class="p-teacher">Ковалюк Т.В.</span>
+						<span class="p-auditory">323</span>
+						<button class="edit-projector-btn"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+						<button class="remove-projector-btn"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
+					</div>
+					<div class="projector-block">
+					</div>
+					<div class="projector-block">
+					</div>
+					<div class="projector-block">
+					</div>
+					<div class="projector-block">
+					</div>
+					</div>
+					<div class="sa-block projector-day">
+					<h3>Ср</h3>
+					<div class="projector-block">
+						<span class="p-teacher">Ковалюк Т.В.</span>
+						<span class="p-auditory">323</span>
+						<button class="edit-projector-btn"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+						<button class="remove-projector-btn"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
+					</div>
+					<div class="projector-block">
+					</div>
+					<div class="projector-block">
+					</div>
+					<div class="projector-block">
+					</div>
+					<div class="projector-block">
+					</div>
+					</div>
+					<div class="sa-block projector-day">
+					<h3>Чт</h3>
+					<div class="projector-block">
+						<span class="p-teacher">Ковалюк Т.В.</span>
+						<span class="p-auditory">323</span>
+						<button class="edit-projector-btn"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+						<button class="remove-projector-btn"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
+					</div>
+					<div class="projector-block">
+					</div>
+					<div class="projector-block">
+					</div>
+					<div class="projector-block">
+					</div>
+					<div class="projector-block">
+					</div>
+					</div>
+					<div class="sa-block projector-day">
+					<h3>Пт</h3>
+					<div class="projector-block">
+						<span class="p-teacher">Ковалюк Т.В.</span>
+						<span class="p-auditory">323</span>
+						<button class="edit-projector-btn"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+						<button class="remove-projector-btn"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
+					</div>
+					<div class="projector-block">
+					</div>
+					<div class="projector-block">
+					</div>
+					<div class="projector-block">
+					</div>
+					<div class="projector-block">
+					</div>
+					</div>
+					<div class="sa-block projector-day">
+					<h3>Сб</h3>
+					<div class="projector-block">
+						<span class="p-teacher">Ковалюк Т.В.</span>
+						<span class="p-auditory">323</span>
+						<button class="edit-projector-btn"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+						<button class="remove-projector-btn"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
+					</div>
+					<div class="projector-block">
+					</div>
+					<div class="projector-block">
+					</div>
+					<div class="projector-block">
+					</div>
+					<div class="projector-block">
+					</div>
+					</div>
+					</div>
+				</div>
 				</div>
 			</main>
 		</div>
 
 
 	</div>
-	<div class="modal modal-edit-putchas" style="display:block">
+	<div class="modal modal-edit-projector" style="display:block">
 
 		<div class="pop-up">
 			<button class="close-modal-btn"><i class="fa fa-times" aria-hidden="true"></i></button>
 
 			<form action="" class="">
-				<div class="input-field">
-					<span class="input-lable">Логін</span>
-					<input type="text" class="sa-input">
-				</div>
-				<div class="input-field">
-					<span class="input-lable">И'мя</span>
-					<input type="text" class="sa-input">
-				</div>
-				<div class="input-field">
-					<span class="input-lable">Електронна пошта</span>
-					<input type="email" class="sa-input">
-				</div>
-				<div class="input-field">
-					<span class="input-lable">Телефон</span>
-					<input type="tel" class="sa-input">
-				</div>
+				<div class="input-field sa-select">
+                           <span class="input-lable">Аудиторія</span>
+                            <input type="text" class="sa-input"  readonly>
+                             <ul class="sa-list">
+                             	<li>1Lorem ipsum dolor.</li>
+                             	<li>2Lorem ipsum dolor.</li>
+                             	<li>3Lorem ipsum dolor.</li>
+                             	<li>4Lorem ipsum dolor.</li>
+                             	<li>5Lorem ipsum dolor.</li>
+                             	<li>6Lorem ipsum dolor.</li>
+                             	<li>7Lorem ipsum dolor.</li>
+                             	<li>8Lorem ipsum dolor.</li>
+                             	<li>9Lorem ipsum dolor.</li>
+                             	<li>10Lorem ipsum dolor.</li>
+                             </ul>
+                        </div>
+						<div class="input-field">
+							<span class="input-lable">Викладач</span>
+							<input type="text" class="sa-input">
+						</div>
+						<div class="input-field">
+							<span class="input-lable">Пара</span>
+							<input type="text" class="sa-input">
+						</div>
+						<div class="input-field">
+							<span class="input-lable">День</span>
+							<input type="text" class="sa-input">
+						</div>
+						<div class="input-field">
+							<span class="input-lable">Тиждень</span>
+							<input type="text" class="sa-input">
+						</div>
 				<button class='btn--orange'>Змінити</button>
 			</form>
 		</div>
