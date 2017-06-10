@@ -934,6 +934,11 @@ h2{
 }
 .single-putchases-edit{
 	@include display-flex();
+	@include justify-content(space-between);
+	>div{
+		width: 46%;
+		height: 500px;
+	}
 }
 .content-single-putchases, .content-claims-list, .content-single-claim{
 	@include flex-direction(column);

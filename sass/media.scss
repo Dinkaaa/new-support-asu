@@ -139,6 +139,14 @@
 		}
 	
 	}
+	.claim-item{
+		.eq-note {
+			width: 100%;
+			margin: 10px auto;
+			margin-bottom: 10px!important;
+			font-size: 14px;
+		}
+	}
 	.content-equipment-list{
 		.filters {
     		text-align: center;
@@ -148,14 +156,7 @@
     		position: absolute;
     		right: calc(50% - 80px);
 		}
-		.claim-item{
-			.eq-note {
-				width: 100%;
-				margin: 10px auto;
-				margin-bottom: 10px!important;
-				font-size: 14px;
-			}
-		}
+		
 	}
 }
 @media screen and (max-width:670px) {
@@ -169,6 +170,14 @@
 	.sa-block-full{
 		.sa-block-full-right,.sa-block-full-left{
 			width: 100%!important;
+		}
+	}
+	.single-putchases-edit{
+		display: block;
+		>div{
+			width: 100%;
+			max-width: initial;
+			margin-bottom: 20px;
 		}
 	}
 	
