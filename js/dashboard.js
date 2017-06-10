@@ -32,4 +32,8 @@ $(function() {
 	$(document).delegate('.dashboard-issue', 'click', function(event){
 		$('.task-description-modal').show();
 	});
+	
+	$(document).delegate('.dashboard .dashboard-status', 'click' ,function(event){
+		$(this).next().slideToggle();
+	});
 });

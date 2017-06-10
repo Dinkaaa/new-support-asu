@@ -861,6 +861,7 @@ h2{
 }
 .content-dashboard{
 	@include flex-direction(column);
+	padding: 10px;
 }
 .main-dashboard{
 	margin-bottom: 50px;
@@ -1021,4 +1022,8 @@ h2{
 	border-radius: 3px;
 	border: 1px solid #fff;
 }
-
+.mobile-arrow-dash {
+    position: absolute;
+    top: 7px;
+    right: 20px;
+}

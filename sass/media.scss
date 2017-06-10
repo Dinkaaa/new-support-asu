@@ -1,3 +1,4 @@
+@import "includes/layout";
 @media screen and (max-width:1200px) {
     .start-page{
         width: 98%;
@@ -54,6 +55,45 @@
 	.main{
 		width: 100%;
 	}
+	.dashboard, .main-dashboard{
+		@include flex-direction(column);
+	}
+	.no-dropp-row, .dashboard, .dashboard-block{
+		width: 100%;
+		min-height: initial;
+	}
+	.dashboard-block{
+		margin-bottom: 10px;
+		h2{
+			display: block;
+			padding: 7px;
+			widows: 100%;
+			box-sizing: border-box;
+			background-color: #0889e5;
+			border-radius: 3px;
+			position: relative;
+			&:before{
+				content: "";
+				width: 10px;
+				height: 10px;
+				background-color: red;
+			}
+			
+		}
+	}
+	
+	.issue-content{
+		display: none;
+	}
+	.no-dropp-row{
+		.issue-content{
+			display: block;
+		}
+		h2{
+			font-size: 20px;
+		}
+	
+	}
 }
 @media screen and (max-width:670px) {
     .start-main{
@@ -68,6 +108,10 @@
 			width: 100%!important;
 		}
 	}
+	
+}
+@media screen and (max-width:600px) {
+	
 }
 @media screen and (max-width:425px){
 	.content{
