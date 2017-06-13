@@ -21,7 +21,7 @@ $(document).ready(function () {
         window.location.href = logoffUrl;
     });
 	
-    $("form").data("validator").settings.ignore = "";
+   $("form").data("validator").settings.ignore = "";
     $('.sa-select').each(function () {
         var checkeditem = $(this).find('ul.sa-list li.checked');
         var value = $(checkeditem).html();
@@ -80,4 +80,28 @@ $(document).ready(function () {
 
 function openMenu() {
     $('.main-nav').animate({ left: '0px' }, 200);
+}
+function startLoader(){
+	var content = `<div class="loader">
+		<div align="center" class="cssload-fond">
+			<div class="cssload-container-general">
+				<div class="cssload-internal">
+					<div class="cssload-ballcolor cssload-ball_1"> </div>
+				</div>
+				<div class="cssload-internal">
+					<div class="cssload-ballcolor cssload-ball_2"> </div>
+				</div>
+				<div class="cssload-internal">
+					<div class="cssload-ballcolor cssload-ball_3"> </div>
+				</div>
+				<div class="cssload-internal">
+					<div class="cssload-ballcolor cssload-ball_4"> </div>
+				</div>
+			</div>
+		</div>
+	</div>`
+	$('body').append(content);
+}
+function stopLoader(){
+	$('.loader').remove();
 }
