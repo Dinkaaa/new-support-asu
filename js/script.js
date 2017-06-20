@@ -1,4 +1,18 @@
 $(document).ready(function () {
+	var isActive = false;
+
+	$('.js-menu').on('click', function() {
+		if (isActive) {
+			$(this).removeClass('active');
+			$('body').removeClass('menu-open');
+		} else {
+			$(this).addClass('active');
+			$('body').addClass('menu-open');
+		}
+
+		isActive = !isActive;
+	});
+	
 	$(document).delegate('.ar-task-desc','click', function (event) {
         $('.arcive-description-tasks').show();
     });
@@ -78,9 +92,6 @@ $(document).ready(function () {
    
 });
 
-function openMenu() {
-    $('.main-nav').animate({ left: '0px' }, 200);
-}
 function startLoader(){
 	var content = `<div class="loader">
 		<div align="center" class="cssload-fond">
@@ -102,6 +113,34 @@ function startLoader(){
 	</div>`
 	$('body').append(content);
 }
-function stopLoader(){
-	$('.loader').remove();
-}
+//function stopLoader(){
+//	$('.loader').remove();
+//}
+//$(document).delegate('.filter_equipments','click',function(){
+//	var form = $(this).closest('.filter-form');
+//	var check = [];
+//	var number = $('#equipment_number').val();
+//	$('#equipment_auditories').find('input[type"checkbox"]').each(function(){
+//		if($(this).attr('data-checked') == true){
+//			var val = $(this).attr('data-val');
+//			$(check).push(val);
+//		}
+//	})
+//	
+//	var obj = {number : number, auditories : check};
+//	var url = `equipments/` + obj;
+//	$.ajax({
+//		  type:"GET",
+//		  url: url,
+//		  success: function(){
+//			  history.pushState('', '', url);
+//		  },
+//		error:function (thrownError){
+//					//выводим ошибку
+//			alert('Помилка фільтрування');
+//		}
+//		});
+//});
+
+
+

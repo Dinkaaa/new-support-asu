@@ -46,45 +46,47 @@
 				</div>
 			</header>
 			<main class="content content-putchases">
-				
-				<div class="filters">
-				<div class="fix-content-putchases">
-				<a href="" class="btn--green btn-new-putchases">Додати</a>
-				<h2>Фільтрувати</h2>
-				<form action="" class="filter-form">
-					<div class="input-field">
-						<span class="input-lable">Назва</span>
-						<input type="text" class="sa-input">
-					</div>
-					<div class="input-field">
-						<span class="input-lable">Дата з</span>
-						<input type="date" class="sa-input">
-					</div>
-					<div class="input-field">
-						<span class="input-lable">до</span>
-						<input type="date" class="sa-input">
-					</div>
-					<button class='btn--orange'>Застосувати</button>
-					</form>
+
+				<div class="filter">
+					<div class="fix-content-putchases">
+						<button href="" class="btn--green btn-new-putchases">Додати</button>
+						<h2>Фільтрувати</h2>
+						<div id="filter_putchases" class="filter-form">
+							<div class="input-field">
+								<span class="input-lable">Назва</span>
+								<input id="filter_name" type="text" class="sa-input">
+							</div>
+							<div class="input-field">
+								<span  class="input-lable">Дата з</span>
+								<input id="filter_from" type="date" class="sa-input">
+							</div>
+							<div class="input-field">
+								<span class="input-lable">до</span>
+								<input id="filter_to" type="date" class="sa-input">
+							</div>
+							<button class='btn--orange'>Застосувати</button>
+						</div>
 					</div>
 				</div>
 				<div class="putchases">
 					<div class="claim-item claim-list-header">
 						<div class="claim-theme"><span>Назва</span></div>
 						<div class="claim-date"><span>Дата</span></div>
+						<div class="eq-note"><span>Примітка</span></div>
 						<div class="claim-theme"></div>
 					</div>
 					<ul class="claims-list">
-						<li class="claim-item">
-							<div class="claim-theme"><span>Назва</span></div>
+						<li class="claim-item" data-id='1' data-src="1src">
+							<div class="claim-theme"><span>1</span></div>
 							<div class="claim-date"><span>Дата</span></div>
-							<div class="claim-theme"><a href="" class="btn--orange putchases-edit-btn"><i class="fa fa-pencil" aria-hidden="true"></i></a><a href="" class="btn--red btn-remove-equipment"><i class="fa fa-trash-o" aria-hidden="true"></i></a></div>
+							<div class="eq-note"><span>Примітка</span></div>
+							<div class="claim-theme"><a href="" class="btn--orange putchases-edit-btn"><i class="fa fa-pencil" aria-hidden="true"></i></a><button href="" class="btn--red btn-remove-equipment remove-pop-up-btn"><i class="fa fa-trash-o" aria-hidden="true"></i></button></div>
 
 						</li>
-						<li class="claim-item">
-							<div class="claim-theme"><span>Назва</span></div>
+						<li class="claim-item" data-id='2' data-src="2">
+							<div class="claim-theme"><span>2</span></div>
 							<div class="claim-date"><span>Дата</span></div>
-							<div class="claim-theme"><a href="" class="btn--orange putchases-edit-btn"><i class="fa fa-pencil" aria-hidden="true"></i></a><a href="" class="btn--red btn-remove-equipment"><i class="fa fa-trash-o" aria-hidden="true"></i></a></div>
+							<div class="claim-theme"><a href="" class="btn--orange putchases-edit-btn"><i class="fa fa-pencil" aria-hidden="true"></i></a><button href="" class="btn--red btn-remove-equipment remove-pop-up-btn"><i class="fa fa-trash-o" aria-hidden="true"></i></button></div>
 
 						</li>
 						<li class="claim-item">
@@ -100,32 +102,52 @@
 
 						</li>
 					</ul>
+					<div id="claim_pager" class="claim-pager">
+						<div class="pagination-container">
+							<ul class="pagination">
+								<li class="active"><a>1</a></li>
+								<li><a data-ajax="true" data-ajax-method="GET" href="/equipments/2">2</a></li>
+								<li><a data-ajax="true" data-ajax-method="GET" href="/equipments/2">3</a></li>
+								<li><a data-ajax="true" data-ajax-method="GET" href="/equipments/2">4</a></li>
+								<li><a data-ajax="true" data-ajax-method="GET" href="/equipments/2">5</a></li>
+								<li><a data-ajax="true" data-ajax-method="GET" href="/equipments/2">6</a></li>
+								<li class="PagedList-skipToNext"><a data-ajax="true" data-ajax-method="GET" href="/equipments/2" rel="next">»</a></li>
+							</ul>
+						</div>
+					</div>
 				</div>
 			</main>
 		</div>
-			<div class="modal modal-edit-putchas" style="display:block">
+		<div class="modal modal-add-putchas">
 
-		<div class="pop-up">
-			<button class="close-modal-btn"><i class="fa fa-times" aria-hidden="true"></i></button>
+			<div class="pop-up">
+				<button class="close-modal-btn"><i class="fa fa-times" aria-hidden="true"></i></button>
 
-			<form action="" class="">
-				<div class="input-field">
-					<span class="input-lable">Назва</span>
-					<input type="text" class="sa-input">
+				<div class="putchases-form">
+					<div class="input-field">
+						<span class="input-lable">Назва</span>
+						<input id="input_name" type="text" class="sa-input">
+						<span class="required-field">*</span>
+						<span class="help-error"></span>
+					</div>
+					<div class="input-field">
+						<span class="input-lable">Дата</span>
+						<input id="input_date" type="date" class="sa-input">
+						<span class="help-error"></span>
+					</div>
+					<div class="input-field sa-textarea">
+						<span class="input-lable">Примітка</span>
+						<textarea id="input_note" type="text" class="sa-input" placeholder=""></textarea>
+					</div>
+					<button class='btn--orange save-putchases'>Зберегти</button>
 				</div>
-				<div class="input-field">
-					<span class="input-lable">Дата</span>
-					<input type="date" class="sa-input">
-				</div>
-				<div class="input-field sa-textarea">
-					<span class="input-lable">Примітка</span>
-					<textarea type="text" class="sa-input" placeholder=""></textarea>
-				</div>
-				<button class='btn--orange'>Зберегти</button>
-			</form>
+			</div>
 		</div>
-	</div>
-		<script src="js/script.js"></script>
+		<!--		<script src="js/script.js"></script>-->
+		<script src="js/removeItem.js"></script>\
+		<script src="js/jquery.validate.js"></script>
+		<script src="js/newPutchases.js"></script>
 	</div>
 </body>
+
 </html>

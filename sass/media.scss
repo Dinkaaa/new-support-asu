@@ -94,8 +94,14 @@
 		display: block;
 	}
 	.main-nav{
-		//display: none;
-		left: -320px;
+		.start-logo{
+			padding: 23px 11px 10px 70px;
+		}
+		transform: translateX(-320px);
+
+		.menu-open & {
+			transform: translateX(0);
+		}
 	}
 	
 	.main{
