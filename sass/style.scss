@@ -442,7 +442,7 @@ h2{
 .sa-list{
 	display: none;
 	position: absolute;
-	top: calc(100% - 3px);
+	top: 65px;
 	border-bottom: 1px solid grey;
 	left: 0;
 	width: 100%;
@@ -455,6 +455,7 @@ h2{
 		color:$dark;
 		cursor: pointer;
 		padding: 5px 10px;
+		min-height: 27px;
 		&:hover{
 			background-color: rgba(0,197,178,0.4);
 		}
@@ -936,9 +937,6 @@ h2{
 }
 .btn-new-putchases{
 	margin-bottom: 20px;
-}
-.fix-content-putchases{
-	position: fixed;
 }
 .single-putchas-list{
 	

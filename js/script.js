@@ -1,4 +1,5 @@
 $(document).ready(function () {
+	
 	var isActive = false;
 
 	$('.js-menu').on('click', function() {
@@ -35,14 +36,14 @@ $(document).ready(function () {
         window.location.href = logoffUrl;
     });
 	
-   $("form").data("validator").settings.ignore = "";
-    $('.sa-select').each(function () {
-        var checkeditem = $(this).find('ul.sa-list li.checked');
-        var value = $(checkeditem).html();
-        var id = $(checkeditem).attr("value");
-        $(checkeditem).closest('.sa-select').find('input.sa-input').val(value);
-        $(checkeditem).closest('.sa-select').find('input.sa-hidden-input').val(id);
-    });
+//   $("form").data("validator").settings.ignore = "";
+//    $('.sa-select').each(function () {
+//        var checkeditem = $(this).find('ul.sa-list li.checked');
+//        var value = $(checkeditem).html();
+//        var id = $(checkeditem).attr("value");
+//        $(checkeditem).closest('.sa-select').find('input.sa-input').val(value);
+//        $(checkeditem).closest('.sa-select').find('input.sa-hidden-input').val(id);
+//    });
     $(document).delegate(".ckeckbox-form span", 'click', function (event) {
         var checkbox = $(this).parent().find('.sa-checkbox');
         if ($(checkbox).attr('data-checked') == 'false') {
