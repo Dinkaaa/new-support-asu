@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/media.css">
+	<script src="js/jquery-3.1.0.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+</head>
+
+<body>
+	<div class="wrapp">
+		<aside class="main-nav">
+			<div class="nav-content">
+				<div class="start-logo">
+					<img src="images/big-logo.png" alt="">
+				</div>
+				<nav>
+					<ul>
+						<!--						<li><a href=""><i class="fa fa-address-card-o" aria-hidden="true"></i>Редагувати профіль</a></li>-->
+						<li><a href=""><i class="fa fa-list-ul" aria-hidden="true"></i>Заявки</a></li>
+						<li><a href=""><i class="fa fa-tasks" aria-hidden="true"></i>Завдання</a></li>
+						<li><a href=""><i class="fa fa-magic" aria-hidden="true"></i>Створити завдання</a></li>
+						<li><a href=""><i class="fa fa-hdd-o" aria-hidden="true"></i>Обладнання</a></li>
+						<li><a href=""><i class="fa fa-desktop" aria-hidden="true"></i>Розклад проектора</a></li>
+						<li><a href=""><i class="fa fa-wrench" aria-hidden="true"></i>Розклад профілактик</a></li>
+						<li><a href=""><i class="fa fa-archive" aria-hidden="true"></i>Архів завдань</a></li>
+						<li><a href=""><i class="fa fa-pencil-square-o" aria-hidden="true"></i>План закупівлі</a></li>
+					</ul>
+				</nav>
+			</div>
+		</aside>
+		<div class="main">
+			<header>
+				<div class="mobile-content">
+					<button class="btn--green mobile-nav-open"><i class="fa fa-bars" aria-hidden="true"></i></button>
+				</div>
+				<h1>Архів завдань</h1>
+				<div class="header-profile">
+					<span class="normal-text no-mobile">Довгаль Дмитро</span>
+					<a href="#" class="exit-btn"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+				</div>
+			</header>
+			<main class="content content-archive">
+			<div class="archive-task">
+				<div class="claim-item claim-list-header">
+					<div class="claim-theme"><span>Назва</span></div>
+					<div class="claim-category"><span>Категорія</span></div>
+					<div class="claim-date"><span>Дата початку</span></div>
+					<div class="claim-date"><span>Дата звершення</span></div>
+					<div class="claim-more"><span>Деталі</span></div>
+					<div class="claim-more"><span>Повернути</span></div>
+				</div>
+				<ul class="claims-list">
+					<li class="claim-item">
+						<div class="claim-theme"><span>Назва</span></div>
+						<div class="claim-category"><span>Категорія</span></div>
+						<div class="claim-date"><span>Дата подання</span></div>
+						<div class="claim-date"><span>Дата звершення</span></div>
+						<div class="claim-more"><button class="btn--blue ar-task-desc">Деталі</button></div>
+						<div class="claim-more task-turn"><button class="btn--orange">Повернути</button></div>
+					</li>
+					<li class="claim-item">
+						<div class="claim-theme"><span>Назва</span></div>
+						<div class="claim-category"><span>Категорія</span></div>
+						<div class="claim-date"><span>Дата подання</span></div>
+						<div class="claim-date"><span>Дата звершення</span></div>
+						<div class="claim-more"><button class="btn--blue ar-task-desc">Деталі</button></div>
+						<div class="claim-more task-turn"><button class="btn--orange">Повернути</button></div>
+					</li>
+					<li class="claim-item">
+						<div class="claim-theme"><span>Назва</span></div>
+						<div class="claim-category"><span>Категорія</span></div>
+						<div class="claim-date"><span>Дата подання</span></div>
+						<div class="claim-date"><span>Дата звершення</span></div>
+						<div class="claim-more"><button class="btn--blue ar-task-desc">Деталі</button></div>
+						<div class="claim-more task-turn"><button class="btn--orange">Повернути</button></div>
+					</li>
+					
+					
+				</ul>
+			</div>
+			</main>
+		</div>
+	</div>
+	<div class="modal arcive-description-tasks">
+		<div class="pop-up">
+		<button class="close-modal-btn"><i class="fa fa-times" aria-hidden="true"></i></button>
+			<div class="issue-desctiption-content">
+				<div class="issue-desctiption-block">
+					<span class="issue-desctiption-name">Назва</span>
+					<span class="issue-desctiption-text">Встановити нове ПО</span>
+				</div>
+				<div class="issue-desctiption-block">
+					<span class="issue-desctiption-name">Категорія</span>
+					<span class="issue-desctiption-text">Встановлення ПО </span>
+				</div>
+				<div class="issue-desctiption-block">
+					<span class="issue-desctiption-name">Аудиторія</span>
+					<span class="issue-desctiption-text">416</span>
+				</div>
+				<div class="issue-desctiption-block">
+					<span class="issue-desctiption-name">Опис</span>
+					<span class="issue-desctiption-text">Встановити gpss на всі комп'ютери аудиторії</span>
+				</div>
+				<div class="issue-desctiption-block">
+					<span class="issue-desctiption-name">Дата</span>
+					<span class="issue-desctiption-text">30.05</span>
+					<span class="issue-desctiption-text">18.06</span>
+				</div>
+				<div class="issue-desctiption-block">
+					<span class="issue-desctiption-name">Відповідальний</span>
+					<span class="issue-desctiption-text">Опришко Андрій</span>
+				</div>
+				<div class="issue-desctiption-block">
+					<span class="issue-desctiption-name">Виконавці</span>
+					<span class="issue-desctiption-text">Довгаль Дмитро</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/script.js"></script>
+	</body>
+</html>

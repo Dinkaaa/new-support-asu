@@ -1,3 +1,4 @@
+@import "includes/layout";
 @media screen and (max-width:1200px) {
     .start-page{
         width: 98%;
@@ -14,6 +15,52 @@
 		.column{
 			width: 100%;
 			margin-bottom: 30px;
+		}
+	}
+	.content-projector,.content-putchases,.content-users{
+		padding: 10px;
+		@include flex-direction(column-reverse);
+		>div{
+			width: 100%!important;
+			form{
+				@include display-flex();
+				@include flex-wrap(wrap);
+				@include justify-content(space-between);
+				.input-field{
+					width: 47%;
+					min-width: 200px;
+					 
+				}
+			}
+		}
+	}
+	.fix-content-putchases{
+		position: relative;
+	}
+	.projector-week-content{
+		@include flex-wrap(wrap);
+		.sa-block{
+			width: 33.3333%;
+		}
+	}
+	.projector-day{
+		border: 1px solid rgba(0,0,0,0.3);
+		border-top: 2px solid rgba(0,0,0,0.3);
+		border-bottom: 0;
+	}
+	.content-putchases,.content-users{
+		@include flex-direction(column);
+		>div{
+			form{
+				@include justify-content(center);
+				text-align: center;					 
+				width: 300px;
+				margin: 20px auto;
+
+				.input-field{
+					width: 100%;
+				}
+			}
 		}
 	}
 }
@@ -47,12 +94,75 @@
 		display: block;
 	}
 	.main-nav{
-		//display: none;
-		left: -320px;
+		.start-logo{
+			padding: 23px 11px 10px 70px;
+		}
+		transform: translateX(-320px);
+
+		.menu-open & {
+			transform: translateX(0);
+		}
 	}
 	
 	.main{
 		width: 100%;
+	}
+	.dashboard, .main-dashboard{
+		@include flex-direction(column);
+	}
+	.no-dropp-row, .dashboard, .dashboard-block{
+		width: 100%;
+		min-height: initial;
+	}
+	.dashboard-block{
+		margin-bottom: 10px;
+		h2{
+			display: block;
+			padding: 7px;
+			width: 100%;
+			box-sizing: border-box;
+			background-color: #0889e5;
+			border-radius: 3px;
+			position: relative;
+			
+		}
+	}
+	
+	.issue-content{
+		display: none;
+	}
+	.claim-task{
+		.issue-content{
+			display: block;
+		}
+	}
+	.no-dropp-row{
+		.issue-content{
+			display: block;
+		}
+		h2{
+			font-size: 20px;
+		}
+	
+	}
+	.claim-item{
+		.eq-note {
+			width: 100%;
+			margin: 10px auto;
+			margin-bottom: 10px!important;
+			font-size: 14px;
+		}
+	}
+	.content-equipment-list{
+		.filters {
+    		text-align: center;
+			margin-top: 40px;
+		}
+		.btn-new-equipment {
+    		position: absolute;
+    		right: calc(50% - 80px);
+		}
+		
 	}
 }
 @media screen and (max-width:670px) {
@@ -68,6 +178,18 @@
 			width: 100%!important;
 		}
 	}
+	.single-putchases-edit{
+		display: block;
+		>div{
+			width: 100%;
+			max-width: initial;
+			margin-bottom: 20px;
+		}
+	}
+	
+}
+@media screen and (max-width:600px) {
+	
 }
 @media screen and (max-width:425px){
 	.content{
@@ -75,5 +197,24 @@
 	}
 	.sa-block {
 		padding: 30px 15px;
+	}
+	.projector-week-content{
+		@include flex-wrap(wrap);
+		.sa-block{
+			width: 50%;
+			padding: 0;
+		}
+	}
+	.content-projector, .content-putchases{
+		>div{
+			form{
+				display: block;
+				text-align: center;
+				.input-field{
+					width: 100%;
+					 
+				}
+			}
+		}
 	}
 }

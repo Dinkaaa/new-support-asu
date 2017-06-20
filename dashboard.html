@@ -10,7 +10,6 @@
 	<link rel="stylesheet" href="css/media.css">
 	<script src="js/jquery-3.1.0.min.js"></script>
 	<script src="js/jquery-ui.min.js"></script>
-	<script src="js/zepto.min.js"></script>
 </head>
 
 <body>
@@ -22,9 +21,15 @@
 				</div>
 				<nav>
 					<ul>
-						<li><a href=""><i class="fa fa-address-card-o" aria-hidden="true"></i>Редагувати профіль</a></li>
-						<li><a href=""><i class="fa fa-pencil-square-o" aria-hidden="true"></i>Подати зявку</a></li>
-						<li><a href=""><i class="fa fa-list-ul" aria-hidden="true"></i>Мої заявки</a></li>
+						<!--						<li><a href=""><i class="fa fa-address-card-o" aria-hidden="true"></i>Редагувати профіль</a></li>-->
+						<li><a href=""><i class="fa fa-list-ul" aria-hidden="true"></i>Заявки</a></li>
+						<li><a href=""><i class="fa fa-tasks" aria-hidden="true"></i>Завдання</a></li>
+						<li><a href=""><i class="fa fa-magic" aria-hidden="true"></i>Створити завдання</a></li>
+						<li><a href=""><i class="fa fa-hdd-o" aria-hidden="true"></i>Обладнання</a></li>
+						<li><a href=""><i class="fa fa-desktop" aria-hidden="true"></i>Розклад проектора</a></li>
+						<li><a href=""><i class="fa fa-wrench" aria-hidden="true"></i>Розклад профілактик</a></li>
+						<li><a href=""><i class="fa fa-archive" aria-hidden="true"></i>Архів завдань</a></li>
+						<li><a href=""><i class="fa fa-pencil-square-o" aria-hidden="true"></i>План закупівлі</a></li>
 					</ul>
 				</nav>
 			</div>
@@ -36,88 +41,393 @@
 				</div>
 				<h1>Дошка завдань</h1>
 				<div class="header-profile">
-					<span class="normal-text no-mobile">Им'я Користувача</span>
+					<span class="normal-text no-mobile">Дмитро Довгаль</span>
 					<a href="#" class="exit-btn"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
 				</div>
 			</header>
 			<main class="content content-dashboard">
-				<div id="dashboard" class="dashboard">
-					<div class="dashboard-block">
-						<h2 class="dashboard-status">
-							До Виконання
-						</h2>
-						<div class="issue-content droppable ui-droppable">
+			<div class="filters">
+					<button class='btn--green open-filters-btn'>Показати фільтри</button>
+					<div class="filter-section close">
+						<form action="" class="filter-form">
+							<div class="filter-info">
+								<div class="filter-block">
+									<a href="" class="btn--blue">Тільки мої</a>
+									<div class="input-field">
+										<span class="input-lable">Виконавець</span>
+										<input type="text" class="sa-input">
+									</div>
+									<div class="input-field">
+										<span class="input-lable">Дата з</span>
+										<input type="date" class="sa-input">
+									</div>
+									<div class="input-field">
+										<span class="input-lable">до</span>
+										<input type="date" class="sa-input">
+									</div>
+									
 
-							<div id="1"  class="dashboard-issue ui-draggable">
-								<span class="issue-theme">Theme</span>
-								<span class="issue-performer">Name Surname</span>
-								<span class="issue-performer">Name Surname</span>
+								</div>
+								<div class="filter-block">
+									<div class="input-field sa-select-chekbox">
+										<span class="input-lable">Аудиторія</span>
+										<ul class="checkbox-list">
+											<li>
+												<div class="ckeckbox-form">
+													<span class="sa-checkbox false" data-checked="false"><i class="fa fa-check" aria-hidden="true"></i></span>
+													<input type="checkbox">
+													<span class="sa-label">323</span>
+												</div>
+											</li>
+											<li>
+												<div class="ckeckbox-form">
+													<span class="sa-checkbox false" data-checked="false"><i class="fa fa-check" aria-hidden="true"></i></span>
+													<input type="checkbox">
+													<span class="sa-label">416</span>
+												</div>
+											</li>
+											<li>
+												<div class="ckeckbox-form">
+													<span class="sa-checkbox false" data-checked="false"><i class="fa fa-check" aria-hidden="true"></i></span>
+													<input type="checkbox">
+													<span class="sa-label">417</span>
+												</div>
+											</li>
+											<li>
+												<div class="ckeckbox-form">
+													<span class="sa-checkbox false" data-checked="false"><i class="fa fa-check" aria-hidden="true"></i></span>
+													<input type="checkbox">
+													<span class="sa-label">430</span>
+												</div>
+											</li>
+											<li>
+												<div class="ckeckbox-form">
+													<span class="sa-checkbox false" data-checked="false"><i class="fa fa-check" aria-hidden="true"></i></span>
+													<input type="checkbox">
+													<span class="sa-label">426</span>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
 							</div>
-							<div id="6"  class="dashboard-issue ui-draggable">
-								<span class="issue-theme">Theme</span>
-								<span class="issue-performer">Name Surname</span>
-								<span class="issue-performer">Name Surname</span>
+							<button class='btn--orange'>Застосувати</button>
+						</form>
+					</div>
+				</div>
+				<div class="main-dashboard">
+					<div class="dashboard-block no-dropp-row">
+						<h2 class="dashboard-status">
+							Задача
+						</h2>
+						<div class="issue-content">
+
+							<div id="4" class="dashboard-issue">
+								<span class="issue-theme">KPI Open</span>
+								<span class="issue-performer">Довгаль Дмитро</span>
+								<span class="issue-performer">Опришко Андрій</span>
+								<span class="issue-date">30.05</span>
 							</div>
 						</div>
 					</div>
-					<div class="dashboard-block">
-						<h2 class="dashboard-status">
-							In Progress
-						</h2>
-						<div class="issue-content droppable ui-droppable ">
+					<div id="dashboard" class="dashboard">
+						<div class="dashboard-block">
+							<h2 class="dashboard-status">
+								До Виконання
+								<span class="mobile-content mobile-arrow-dash">
+									<i class="fa fa-angle-down" aria-hidden="true"></i>
+								</span>
+							</h2>
+							<div class="issue-content droppable ui-droppable">
+								<div class="help-dropp">
+									<div id="6" class="dashboard-issue ui-draggable">
+										<span class="issue-theme">Аудиторія 416</span>
+										<span class="issue-performer">Довгаль Дмитро</span>
+										<span class="issue-performer">Опришко Андрій</span>
+										<span class="issue-date">25.05</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="dashboard-block">
+							<h2 class="dashboard-status">
+								В роботі
+								<span class="mobile-content mobile-arrow-dash">
+									<i class="fa fa-angle-down" aria-hidden="true"></i>
+								</span>
+							</h2>
+							<div class="issue-content droppable ui-droppable ">
+								<div class="help-dropp">
+									<div id="2" class="dashboard-issue ui-draggable">
+										<span class="issue-theme">Аудиторія 417</span>
+										<span class="issue-performer">Довгаль Дмитро</span>
+										<span class="issue-performer">Опришко Андрій</span>
+										<span class="issue-date">18.05</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="dashboard-block">
+							<h2 class="dashboard-status">
+								Перевірити
+								<span class="mobile-content mobile-arrow-dash">
+									<i class="fa fa-angle-down" aria-hidden="true"></i>
+								</span>
+							</h2>
+							<div class="issue-content droppable ui-droppable ">
+								<div class="help-dropp">
+								</div>
+							</div>
+						</div>
+						<div class="dashboard-block">
+							<h2 class="dashboard-status">
+								Виконано
+								<span class="mobile-content mobile-arrow-dash">
+									<i class="fa fa-angle-down" aria-hidden="true"></i>
+								</span>
+							</h2>
+							<div class="issue-content droppable ui-droppable ">
+								<div class="help-dropp">
+									<div id="5" class="dashboard-issue ui-draggable">
+										<span class="issue-theme">Образ</span>
+										<span class="issue-performer">Довгаль Дмитро</span>
+										<span class="issue-performer">Опришко Андрій</span>
+										<a href="" class="btn--red to-archive">В архів</a>
+									</div>
+								</div>
+							</div>
+						</div>
 
-							<div id="2"  class="dashboard-issue ui-draggable">
+					</div>
+				</div>
+				<div class="main-dashboard">
+					<div class="dashboard-block no-dropp-row">
+						<h2 class="dashboard-status">
+							Задача
+						</h2>
+						<div class="issue-content">
+
+							<div id="4" class="dashboard-issue">
 								<span class="issue-theme">Theme</span>
 								<span class="issue-performer">Name Surname</span>
 								<span class="issue-performer">Name Surname</span>
+								<span class="issue-date">30.05</span>
 							</div>
 						</div>
 					</div>
-					<div class="dashboard-block">
-						<h2 class="dashboard-status">
-							Перевірити
-						</h2>
-						<div class="issue-content droppable ui-droppable ">
+					<div id="dashboard" class="dashboard">
+						<div class="dashboard-block">
+							<h2 class="dashboard-status">
+								До Виконання
+								<span class="mobile-content mobile-arrow-dash">
+									<i class="fa fa-angle-down" aria-hidden="true"></i>
+								</span>
+							</h2>
+							<div class="issue-content droppable ui-droppable">
+								<div class="help-dropp">
 
-							<div id="3"  class="dashboard-issue ui-draggable">
-								<span class="issue-theme">Theme</span>
-								<span class="issue-performer">Name Surname</span>
-								<span class="issue-performer">Name Surname</span>
+									<div id="1" class="dashboard-issue ui-draggable">
+										<span class="issue-theme">Theme</span>
+										<span class="issue-performer">Name Surname</span>
+										<span class="issue-performer">Name Surname</span>
+									</div>
+									<div id="6" class="dashboard-issue ui-draggable">
+										<span class="issue-theme">Theme</span>
+										<span class="issue-performer">Name Surname</span>
+										<span class="issue-performer">Name Surname</span>
+										<span class="issue-date">30.05</span>
+									</div>
+								</div>
 							</div>
 						</div>
-					</div>
-					<div class="dashboard-block">
-						<h2 class="dashboard-status">
-							Reopened
-						</h2>
-						<div class="issue-content droppable ui-droppable ">
-
-							<div id="4"  class="dashboard-issue ui-draggable">
-								<span class="issue-theme">Theme</span>
-								<span class="issue-performer">Name Surname</span>
-								<span class="issue-performer">Name Surname</span>
+						<div class="dashboard-block">
+							<h2 class="dashboard-status">
+								В роботі
+								<span class="mobile-content mobile-arrow-dash">
+									<i class="fa fa-angle-down" aria-hidden="true"></i>
+								</span>
+							</h2>
+							<div class="issue-content droppable ui-droppable ">
+								<div class="help-dropp">
+									<div id="2" class="dashboard-issue ui-draggable">
+										<span class="issue-theme">Theme</span>
+										<span class="issue-performer">Name Surname</span>
+										<span class="issue-performer">Name Surname</span>
+										<span class="issue-date">30.05</span>
+									</div>
+								</div>
 							</div>
 						</div>
-					</div>
-					<div class="dashboard-block">
-						<h2 class="dashboard-status">
-							Виконано
-						</h2>
-						<div class="issue-content droppable ui-droppable ">
-
-							<div id="5"  class="dashboard-issue ui-draggable">
-								<span class="issue-theme">Theme</span>
-								<span class="issue-performer">Name Surname</span>
-								<span class="issue-performer">Name Surname</span>
+						<div class="dashboard-block">
+							<h2 class="dashboard-status">
+								Перевірити
+								<span class="mobile-content mobile-arrow-dash">
+									<i class="fa fa-angle-down" aria-hidden="true"></i>
+								</span>
+							</h2>
+							<div class="issue-content droppable ui-droppable ">
+								<div class="help-dropp">
+									<div id="3" class="dashboard-issue ui-draggable">
+										<span class="issue-theme">Theme</span>
+										<span class="issue-performer">Name Surname</span>
+										<span class="issue-performer">Name Surname</span>
+									</div>
+								</div>
 							</div>
 						</div>
-					</div>
+						<div class="dashboard-block">
+							<h2 class="dashboard-status">
+								Виконано
+								<span class="mobile-content mobile-arrow-dash">
+									<i class="fa fa-angle-down" aria-hidden="true"></i>
+								</span>
+							</h2>
+							<div class="issue-content droppable ui-droppable ">
+								<div class="help-dropp">
+									<div id="5" class="dashboard-issue ui-draggable">
+										<span class="issue-theme">Theme</span>
+										<span class="issue-performer">Name Surname</span>
+										<span class="issue-performer">Name Surname</span>
+										<a href="" class="btn--red to-archive">В архів</a>
+									</div>
+								</div>
+							</div>
+						</div>
 
+					</div>
+				</div>
+				
+				<div class="modal task-description-modal ">
+						<button class="close-modal-btn"><i class="fa fa-times" aria-hidden="true"></i></button>
+						<div class="issue-desctiption-content">
+						<div class="mobile-content">
+						<div class="mob-chanche-status">
+							<h3>Змінити статус завдання</h3>
+							<form action="">
+								 <div class="input-field sa-select">
+								   <span class="input-lable">Статус</span>
+									<input type="text" class="sa-input" placeholder="Статус" required readonly>
+									 <span class="required-field">*</span>
+									 <ul class="sa-list">
+										<li>До виконання</li>
+										<li>В роботі</li>
+										<li>Перевірити</li>
+										<li>Виконати</li>
+									 </ul>
+								</div>
+								<button type="submit" class="btn--green">Змінити</button>
+							</form>
+						</div>
+							
+							
+						</div>
+							<div class="issue-desctiption-block">
+								<span class="issue-desctiption-name">Назва</span>
+								<span class="issue-desctiption-text">KPI Open</span>
+							</div>
+							<div class="issue-desctiption-block">
+								<span class="issue-desctiption-name">Категорія</span>
+								<span class="issue-desctiption-text">Встановлення ПО</span>
+							</div>
+							<div class="issue-desctiption-block">
+								<span class="issue-desctiption-name">Аудиторія</span>
+								<span class="issue-desctiption-text">417 416</span>
+							</div>
+							<div class="issue-desctiption-block">
+								<span class="issue-desctiption-name">Опис</span>
+								<span class="issue-desctiption-text">Підготувати аудиторії до KPI Open </span>
+							</div>
+							<div class="issue-desctiption-block">
+								<span class="issue-desctiption-name">Дата</span>
+								<span class="issue-desctiption-text">30.05</span>
+								<span class="issue-desctiption-text">18.06</span>
+							</div>
+							<div class="issue-desctiption-block">
+								<span class="issue-desctiption-name">Відповідальний</span>
+								<span class="issue-desctiption-text">Довгаль Дмитро</span>
+							</div>
+							<div class="issue-desctiption-block">
+								<span class="issue-desctiption-name">Виконавці</span>
+								<span class="issue-desctiption-text">Довгаль Дмитро</span>
+								<span class="issue-desctiption-text">Опришко Андрій</span>
+								<span class="issue-desctiption-text">Антон Перерва</span>
+							</div>
+						</div>
+						<a href="" class="btn--green">Редагувати</a>
+						<div class="issue-desctiption-content sub-issue-desctiption-content ">
+							<div class="issue-desctiption-block">
+								<span class="issue-desctiption-name">Назва</span>
+								<span class="issue-desctiption-text">Аудиторія 416</span>
+							</div>
+							<div class="issue-desctiption-block">
+								<span class="issue-desctiption-name">Категорія</span>
+								<span class="issue-desctiption-text">Встановлення ПО </span>
+							</div>
+							<div class="issue-desctiption-block">
+								<span class="issue-desctiption-name">Аудиторія</span>
+								<span class="issue-desctiption-text">416</span>
+							</div>
+							<div class="issue-desctiption-block">
+								<span class="issue-desctiption-name">Опис</span>
+								<span class="issue-desctiption-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente cum incidunt molestiae ullam id itaque, est pariatur nemo eveniet. Deserunt laborum ex expedita assumenda accusamus facilis adipisci ullam, error doloremque!</span>
+							</div>
+							<div class="issue-desctiption-block">
+								<span class="issue-desctiption-name">Дата</span>
+								<span class="issue-desctiption-text">30.05</span>
+								<span class="issue-desctiption-text">18.06</span>
+							</div>
+							<div class="issue-desctiption-block">
+								<span class="issue-desctiption-name">Відповідальний</span>
+								<span class="issue-desctiption-text">1Lorem ipsum</span>
+							</div>
+							<div class="issue-desctiption-block">
+								<span class="issue-desctiption-name">Виконавці</span>
+								<span class="issue-desctiption-text">1Lorem ipsum</span>
+								<span class="issue-desctiption-text">1Lorem ipsum</span>
+								<span class="issue-desctiption-text">1Lorem ipsum</span>
+							</div>
+						</div>
+						<div class="issue-desctiption-content sub-issue-desctiption-content ">
+							<div class="issue-desctiption-block">
+								<span class="issue-desctiption-name">Назва</span>
+								<span class="issue-desctiption-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime fugiat, odit temporibus. Accusamus veritatis dignissimos, perspiciatis saepe maiores, repellat dolores.</span>
+							</div>
+							<div class="issue-desctiption-block">
+								<span class="issue-desctiption-name">Категорія</span>
+								<span class="issue-desctiption-text">odit temporibus. Accusamus veritatis dignissimos, perspiciatis </span>
+							</div>
+							<div class="issue-desctiption-block">
+								<span class="issue-desctiption-name">Аудиторія</span>
+								<span class="issue-desctiption-text">434</span>
+							</div>
+							<div class="issue-desctiption-block">
+								<span class="issue-desctiption-name">Опис</span>
+								<span class="issue-desctiption-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente cum incidunt molestiae ullam id itaque, est pariatur nemo eveniet. Deserunt laborum ex expedita assumenda accusamus facilis adipisci ullam, error doloremque!</span>
+							</div>
+							<div class="issue-desctiption-block">
+								<span class="issue-desctiption-name">Дата</span>
+								<span class="issue-desctiption-text">30.05</span>
+								<span class="issue-desctiption-text">18.06</span>
+							</div>
+							<div class="issue-desctiption-block">
+								<span class="issue-desctiption-name">Відповідальний</span>
+								<span class="issue-desctiption-text">1Lorem ipsum</span>
+							</div>
+							<div class="issue-desctiption-block">
+								<span class="issue-desctiption-name">Виконавці</span>
+								<span class="issue-desctiption-text">1Lorem ipsum</span>
+								<span class="issue-desctiption-text">1Lorem ipsum</span>
+								<span class="issue-desctiption-text">1Lorem ipsum</span>
+							</div>
+						</div>
 				</div>
 			</main>
 		</div>
 	</div>
+	
 	<script src="js/dashboard.js"></script>
+	<script src="js/script.js"></script>
+
 </body>
 
 </html>

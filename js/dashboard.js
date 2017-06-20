@@ -15,7 +15,7 @@ $(function() {
 		   hoverClass: "ui-state-highlight",
 		   drop: function(event, ui) {
 				ui.draggable.remove();
-				$(this).append(`<div id=` + id + ` class=" dashboard-issue ui-draggable" ></div>`);
+				$(this).find('.help-dropp').append(`<div id=` + id + ` class=" dashboard-issue ui-draggable" ></div>`);
 				   $('#' + id).html(remember);
 				   $('#' + id).draggable({
 						opacity:0.9,
@@ -28,4 +28,12 @@ $(function() {
 				   });
 		   }
 		});
+	
+	$(document).delegate('.dashboard-issue', 'click', function(event){
+		$('.task-description-modal').show();
+	});
+	
+	$(document).delegate('.dashboard .dashboard-status', 'click' ,function(event){
+		$(this).next().slideToggle();
+	});
 });
